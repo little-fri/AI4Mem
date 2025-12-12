@@ -1,0 +1,10 @@
+nvcc -o libuvm_force.so data_collector.cpp \
+    -shared -Xcompiler -fPIC \
+    --cudart shared \
+    -I/usr/local/cuda/include \
+    -L/usr/local/cuda/lib64 \
+    -lcupti
+
+git add .
+git commit -m "更新说明"
+git push
