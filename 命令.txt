@@ -1,0 +1,25 @@
+nvcc -o data_collector.so data_collector.cpp  \
+     -shared -Xcompiler -fPIC \
+     --cudart shared \
+     -I/usr/local/cuda/include \
+     -L/usr/local/cuda/lib64 \
+     -lcupti
+
+git add .
+git commit -m "更新说明"
+git push
+
+git remote add origin https://github.com/little-fri/AI4Mem.git
+git add .
+git commit -m "初次提交"
+git push -u origin main
+
+
+echo 'export PATH=/usr/local/cuda-12.2/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-12.2/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
+
+sudo LD_PRELOAD=./data_collector.so /root/rodinia/cuda/hotspot/hotspot 512 2 1000 \
+/root/rodinia/data/hotspot/temp_512 /root/rodinia/data/hotspot/power_512 output.out
+
+sudo LD_PRELOAD=./data_collector.so ./test
