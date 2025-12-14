@@ -25,6 +25,9 @@ static size_t get_page_size() {
     if (ps == 0) ps = (size_t)sysconf(_SC_PAGESIZE);
     return ps;
 }
+
+// forward declaration for chunked prefetcher helper
+static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id, bool sync);
 static void do_prefetch_once_internal() {
     std::vector<uint64_t> copy;
     {
@@ -33,51 +36,16 @@ static void do_prefetch_once_internal() {
         copy.swap(s_addrs);
     }
 
-    // normalize, sort and unique
+    // normalize, sort and unique (page-aligned addresses)
     size_t page = get_page_size();
     for (auto &a : copy) {
         a = (a / page) * page;
     }
-std::sort(copy.begin(), copy.end());
-copy.erase(std::unique(copy.begin(), copy.end()), copy.end());
+    std::sort(copy.begin(), copy.end());
+    copy.erase(std::unique(copy.begin(), copy.end()), copy.end());
 
-// merge into ranges
-struct Range { uint64_t start; uint64_t end; };
-std::vector<Range> ranges;
-for (uint64_t a : copy) {
-    if (ranges.empty()) ranges.push_back({a, a + page});
-    else {
-        Range &last = ranges.back();
-        if (a <= last.end) {
-            if (a + page > last.end) last.end = a + page;
-        } else {
-            ranges.push_back({a, a + page});
-        }
-    }
-}
-
-// perform prefetch
-cudaError_t cerr;
-cerr = cudaSetDevice(s_device_id);
-if (cerr != cudaSuccess) {
-    fprintf(stderr, "uvm_prefetcher: cudaSetDevice(%d) failed: %s\n", s_device_id, cudaGetErrorString(cerr));
-}
-
-for (auto &r : ranges) {
-    void *ptr = (void*)(uintptr_t)r.start;
-    size_t len = (size_t)(r.end - r.start);
-    cerr = cudaMemPrefetchAsync(ptr, len, s_device_id, 0);
-    if (cerr != cudaSuccess) {
-        fprintf(stderr, "uvm_prefetcher: cudaMemPrefetchAsync(%p, %zu) -> %s\n", ptr, len, cudaGetErrorString(cerr));
-    } else {
-        fprintf(stderr, "uvm_prefetcher: Prefetch %p - %p to device %d\n", ptr, (void*)(uintptr_t)r.end, s_device_id);
-    }
-}
-// optionally synchronize to ensure migration completes before next step
-cerr = cudaDeviceSynchronize();
-if (cerr != cudaSuccess) {
-    fprintf(stderr, "uvm_prefetcher: cudaDeviceSynchronize() -> %s\n", cudaGetErrorString(cerr));
-}
+    // Delegate actual prefetching to the chunked implementation
+    prefetch_addresses(copy, s_device_id, true);
 }
 static void prefetch_thread_main() {
     std::unique_lock<std::mutex> lk(s_mtx);
@@ -92,20 +60,27 @@ static void prefetch_thread_main() {
     }
 }
 extern "C" void uvm_prefetcher_start(int interval_seconds, int device_id) {
-if (s_running.load()) return; // already running
-s_interval_seconds = (interval_seconds > 0) ? interval_seconds : 5;
-s_device_id = device_id;
-s_running.store(true);
-s_thread = std::thread(prefetch_thread_main);
+    if (s_running.load()) return; // already running
+    s_interval_seconds = (interval_seconds > 0) ? interval_seconds : 5;
+    s_device_id = device_id;
+    s_running.store(true);
+    int devCount = 0;
+    cudaError_t _cerr = cudaGetDeviceCount(&devCount);
+    if (_cerr != cudaSuccess) {
+        fprintf(stderr, "uvm_prefetcher: cudaGetDeviceCount() -> %s\n", cudaGetErrorString(_cerr));
+    } else {
+        fprintf(stderr, "uvm_prefetcher: starting (interval=%d, device=%d), deviceCount=%d\n", s_interval_seconds, s_device_id, devCount);
+    }
+    s_thread = std::thread(prefetch_thread_main);
 }
 extern "C" void uvm_prefetcher_stop() {
-if (!s_running.load()) return;
-s_running.store(false);
-s_cv.notify_all();
-if (s_thread.joinable()) s_thread.join();
-// clear any pending addresses
-std::lock_guardstd::mutex lg(s_mtx);
-s_addrs.clear();
+    if (!s_running.load()) return;
+    s_running.store(false);
+    s_cv.notify_all();
+    if (s_thread.joinable()) s_thread.join();
+    // clear any pending addresses
+    std::lock_guard<std::mutex> lg(s_mtx);
+    s_addrs.clear();
 }
 extern "C" void uvm_prefetcher_trigger_once() {
 // Wake thread and let it perform a prefetch immediately
@@ -142,19 +117,42 @@ static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id
     }
 
     cudaError_t cerr;
+    int devCount = 0;
+    cerr = cudaGetDeviceCount(&devCount);
+    if (cerr != cudaSuccess) {
+        fprintf(stderr, "uvm_prefetcher: cudaGetDeviceCount() -> %s\n", cudaGetErrorString(cerr));
+    } else {
+        fprintf(stderr, "uvm_prefetcher: prefetch_addresses: deviceCount=%d, requestedDevice=%d, ranges=%zu\n", devCount, device_id, ranges.size());
+    }
+
     cerr = cudaSetDevice(device_id);
     if (cerr != cudaSuccess) {
         fprintf(stderr, "uvm_prefetcher: cudaSetDevice(%d) failed: %s\n", device_id, cudaGetErrorString(cerr));
+    } else {
+        int cur = -1; cudaGetDevice(&cur);
+        fprintf(stderr, "uvm_prefetcher: cudaSetDevice done, current device=%d\n", cur);
+        // Force context creation on this thread before prefetching
+        cudaError_t sync_err = cudaDeviceSynchronize();
+        fprintf(stderr, "uvm_prefetcher: cudaDeviceSynchronize (after set device) -> %s\n", cudaGetErrorString(sync_err));
     }
 
+    // Chunked prefetch: avoid issuing a single huge prefetch call
+    const size_t CHUNK_BYTES = 1 << 20; // 1MB
     for (auto &r : ranges) {
-        void *ptr = (void*)(uintptr_t)r.start;
-        size_t len = (size_t)(r.end - r.start);
-        cerr = cudaMemPrefetchAsync(ptr, len, device_id, 0);
-        if (cerr != cudaSuccess) {
-            fprintf(stderr, "uvm_prefetcher: cudaMemPrefetchAsync(%p, %zu) -> %s\n", ptr, len, cudaGetErrorString(cerr));
-        } else {
-            fprintf(stderr, "uvm_prefetcher: Prefetch %p - %p to device %d\n", ptr, (void*)(uintptr_t)r.end, device_id);
+        uint64_t cur = r.start;
+        uint64_t end = r.end;
+        while (cur < end) {
+            size_t len = (size_t)std::min<uint64_t>((uint64_t)CHUNK_BYTES, end - cur);
+            void *ptr = (void*)(uintptr_t)cur;
+            fprintf(stderr, "uvm_prefetcher: attempting chunked cudaMemPrefetchAsync(%p, %zu) -> device %d\n", ptr, len, device_id);
+            cerr = cudaMemPrefetchAsync(ptr, len, device_id, 0);
+            if (cerr != cudaSuccess) {
+                fprintf(stderr, "uvm_prefetcher: cudaMemPrefetchAsync(%p, %zu) -> %s\n", ptr, len, cudaGetErrorString(cerr));
+                // continue trying other chunks
+            } else {
+                fprintf(stderr, "uvm_prefetcher: Prefetch chunk %p - %p to device %d\n", ptr, (void*)(uintptr_t)(cur + len), device_id);
+            }
+            cur += len;
         }
     }
 
