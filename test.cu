@@ -46,7 +46,7 @@ for (int start = 0; start < N; start += batch) {
     int gridSize = (len + BLOCK_SIZE - 1) / BLOCK_SIZE;
     vector_add_uvm<<<gridSize, BLOCK_SIZE>>>(a+start, b+start, c+start, len);
     cudaDeviceSynchronize();
-    sleep(1); // 每批迁移之间睡 1 秒
+   // sleep(1); // 每批迁移之间睡 1 秒
 }
 
     // 等待 GPU 完成
