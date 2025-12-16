@@ -26,3 +26,8 @@ sudo LD_PRELOAD=./data_collector.so ./test
 
 
 cd /root/AI4Mem && nvcc -shared -Xcompiler -fPIC prefetch.cpp -o libuvm_prefetcher.so -lcudart
+
+
+cd /root/AI4Memv3 && gcc -shared -fPIC preload_replayer.c -o preload_replayer.so -ldl -pthread
+
+gcc -shared -fPIC -O2 -Wall -Wextra -o preload_replayer.so ./preload_replayer.c -ldl -lpthread

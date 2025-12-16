@@ -500,3 +500,382 @@
 2025-12-16 13:03:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
 2025-12-16 13:03:48: calling initial prefetch for /root/AI4Mem/predictions.csv
 2025-12-16 13:03:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 15:09:43: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:09:43: calling initial prefetch for ./predictions.csv
+2025-12-16 15:09:43: started watcher thread (poll_ms=1000)
+2025-12-16 15:09:43: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:09:43: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:09:43: calling initial prefetch for ./predictions.csv
+2025-12-16 15:09:43: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:09:43: calling initial prefetch for ./predictions.csv
+2025-12-16 15:09:43: started watcher thread (poll_ms=1000)
+2025-12-16 15:09:43: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:09:43: started watcher thread (poll_ms=1000)
+2025-12-16 15:09:43: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:09:43: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:09:43: calling initial prefetch for ./predictions.csv
+2025-12-16 15:09:43: started watcher thread (poll_ms=1000)
+2025-12-16 15:09:43: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:10:51: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:10:51: calling initial prefetch for ./predictions.csv
+2025-12-16 15:10:51: started watcher thread (poll_ms=1000)
+2025-12-16 15:10:51: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:10:51: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:10:51: calling initial prefetch for ./predictions.csv
+2025-12-16 15:10:51: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:10:51: calling initial prefetch for ./predictions.csv
+2025-12-16 15:10:51: started watcher thread (poll_ms=1000)
+2025-12-16 15:10:51: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:10:51: started watcher thread (poll_ms=1000)
+2025-12-16 15:10:51: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:10:51: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:10:51: calling initial prefetch for ./predictions.csv
+2025-12-16 15:10:51: started watcher thread (poll_ms=1000)
+2025-12-16 15:10:51: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:11:01: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:01: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:01: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:01: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:11:02: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:02: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:02: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:02: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:11:03: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:03: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:03: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:03: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:11:03: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:03: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:03: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:03: watcher detected mtime change for ./predictions.csv (mtime=1765868566), calling prefetcher
+2025-12-16 15:11:05: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:05: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:05: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:05: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:05: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:05: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:05: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:05: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:05: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:05: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:05: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:10: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:10: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:10: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:10: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:10: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:10: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:10: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:10: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:12: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:12: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:12: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:12: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:12: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:12: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:12: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:12: watcher detected mtime change for ./predictions.csv (mtime=1765869065), calling prefetcher
+2025-12-16 15:11:13: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:13: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:13: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:13: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:13: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:13: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:13: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:13: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:13: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:13: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:13: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:18: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:18: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:18: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:18: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:19: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:19: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:19: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:19: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:20: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:20: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:20: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:20: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:20: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:20: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:20: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:20: watcher detected mtime change for ./predictions.csv (mtime=1765869073), calling prefetcher
+2025-12-16 15:11:22: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:22: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:22: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:22: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:23: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:23: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:23: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:23: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:23: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:23: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:23: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:23: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:23: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:23: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:23: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:23: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:23: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:23: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:23: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:24: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:24: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:24: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:24: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:24: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:24: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:24: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:24: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:28: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:28: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:28: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:28: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:28: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:28: watcher detected mtime change for ./predictions.csv (mtime=1765869082), calling prefetcher
+2025-12-16 15:11:29: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:30: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:30: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:30: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:30: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:42: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:42: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:42: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:42: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:42: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:42: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:42: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:42: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:42: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:42: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:42: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:42: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:42: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:42: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:42: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:42: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:52: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:52: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:52: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:52: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:52: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:52: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:52: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:52: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:54: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:54: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:54: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:54: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:54: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:54: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:54: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:54: watcher detected mtime change for ./predictions.csv (mtime=1765869089), calling prefetcher
+2025-12-16 15:11:55: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:55: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:55: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:55: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:11:55: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:11:55: calling initial prefetch for ./predictions.csv
+2025-12-16 15:11:55: started watcher thread (poll_ms=1000)
+2025-12-16 15:11:55: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:11:56: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:11:56: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:11:56: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:00: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:00: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:00: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:00: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:01: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:01: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:01: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:01: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:30: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:30: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:30: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:30: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:30: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:30: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:30: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:30: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:30: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:30: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:30: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:30: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:30: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:30: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:30: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:30: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:40: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:40: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:40: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:40: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:40: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:40: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:40: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:40: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:42: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:42: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:42: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:42: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:42: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:42: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:42: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:42: watcher detected mtime change for ./predictions.csv (mtime=1765869115), calling prefetcher
+2025-12-16 15:12:44: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:44: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:44: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:44: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:44: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:44: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:44: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:44: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:44: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:44: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:44: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:49: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:49: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:49: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:49: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:49: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:49: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:49: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:49: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:51: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:51: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:51: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:51: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:51: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:51: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:51: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:51: watcher detected mtime change for ./predictions.csv (mtime=1765869163), calling prefetcher
+2025-12-16 15:12:53: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:53: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:53: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:53: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:53: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:53: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:53: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:53: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:53: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:53: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:53: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:58: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:58: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:58: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:58: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:58: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:58: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:58: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:58: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:59: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:59: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:59: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:59: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:12:59: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:12:59: calling initial prefetch for ./predictions.csv
+2025-12-16 15:12:59: started watcher thread (poll_ms=1000)
+2025-12-16 15:12:59: watcher detected mtime change for ./predictions.csv (mtime=1765869172), calling prefetcher
+2025-12-16 15:13:02: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:02: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:02: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:02: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:02: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:02: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:02: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:02: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:02: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:02: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:02: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:02: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:02: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:02: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:02: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:02: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:02: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:02: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:04: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:04: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:04: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:04: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:04: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:04: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:04: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:04: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:07: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:07: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:07: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:07: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:07: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:13:07: calling initial prefetch for ./predictions.csv
+2025-12-16 15:13:07: started watcher thread (poll_ms=1000)
+2025-12-16 15:13:07: watcher detected mtime change for ./predictions.csv (mtime=1765869181), calling prefetcher
+2025-12-16 15:13:09: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:13:09: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:13:09: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:35: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:16:35: calling initial prefetch for ./predictions.csv
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:35: started watcher thread (poll_ms=1000)
+2025-12-16 15:16:35: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:35: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:16:35: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:16:35: calling initial prefetch for ./predictions.csv
+2025-12-16 15:16:35: calling initial prefetch for ./predictions.csv
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:35: started watcher thread (poll_ms=1000)
+2025-12-16 15:16:35: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:35: started watcher thread (poll_ms=1000)
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:35: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:16:35: calling initial prefetch for ./predictions.csv
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:35: started watcher thread (poll_ms=1000)
+2025-12-16 15:16:35: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:35: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:35: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:46: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:16:46: calling initial prefetch for ./predictions.csv
+2025-12-16 15:16:46: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:46: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:46: started watcher thread (poll_ms=1000)
+2025-12-16 15:16:46: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:46: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:46: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:46: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:16:46: calling initial prefetch for ./predictions.csv
+2025-12-16 15:16:46: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:46: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:16:46: started watcher thread (poll_ms=1000)
+2025-12-16 15:16:46: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:16:46: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:16:46: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded

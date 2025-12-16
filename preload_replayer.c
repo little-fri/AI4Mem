@@ -14,12 +14,44 @@ typedef void (*prefetch_file_fn)(const char*, int, int);
 static void call_prefetcher(const char* csv_path, int device, int sync) {
     if (!csv_path) return;
     // Try to load the prefetcher shared lib. Try absolute name first, then generic.
-    const char* libnames[] = { "/root/AI4Mem/libuvm_prefetcher.so", "libuvm_prefetcher.so", NULL };
+    const char* libnames[] = { "/root/AI4Memv3/libuvm_prefetcher.so", "./libuvm_prefetcher.so", "libuvm_prefetcher.so", NULL };
     void* h = NULL;
     for (int i = 0; libnames[i]; ++i) {
+        // Log which library name we're about to try to dlopen
+        {
+            FILE *lf = fopen("./preload_replayer.log", "a");
+            if (lf) {
+                char tb[64];
+                time_t t = time(NULL);
+                strftime(tb, sizeof(tb), "%F %T", localtime(&t));
+                fprintf(lf, "%s: preload_replayer trying dlopen('%s')\n", tb, libnames[i]);
+                fclose(lf);
+            }
+        }
         h = dlopen(libnames[i], RTLD_NOW | RTLD_NOLOAD);
         if (!h) h = dlopen(libnames[i], RTLD_NOW);
-        if (h) break;
+        if (h) {
+            // Log success
+            FILE *lf = fopen("./preload_replayer.log", "a");
+            if (lf) {
+                char tb[64];
+                time_t t = time(NULL);
+                strftime(tb, sizeof(tb), "%F %T", localtime(&t));
+                fprintf(lf, "%s: preload_replayer dlopen('%s') succeeded\n", tb, libnames[i]);
+                fclose(lf);
+            }
+            break;
+        } else {
+            // Log failure and continue
+            FILE *lf = fopen("./preload_replayer.log", "a");
+            if (lf) {
+                char tb[64];
+                time_t t = time(NULL);
+                strftime(tb, sizeof(tb), "%F %T", localtime(&t));
+                fprintf(lf, "%s: preload_replayer dlopen('%s') failed: %s\n", tb, libnames[i], dlerror());
+                fclose(lf);
+            }
+        }
     }
     if (!h) {
         fprintf(stderr, "preload_replayer: failed to dlopen libuvm_prefetcher.so: %s\n", dlerror());
@@ -54,7 +86,7 @@ static void* watch_and_prefetch(void* arg) {
                 last_mtime = st.st_mtime;
                 // log detection
                 {
-                    FILE *lf = fopen("/root/AI4Mem/preload_replayer.log", "a");
+                    FILE *lf = fopen("./preload_replayer.log", "a");
                     if (lf) {
                         char tb[64];
                         time_t t = time(NULL);
@@ -90,7 +122,7 @@ static void preload_replayer_init(void) {
 
     // log constructor start
     {
-        FILE *lf = fopen("/root/AI4Mem/preload_replayer.log", "a");
+        FILE *lf = fopen("./preload_replayer.log", "a");
         if (lf) {
             char tb[64];
             time_t t = time(NULL);
@@ -102,7 +134,7 @@ static void preload_replayer_init(void) {
 
     // Initial prefetch once (best effort)
     {
-        FILE *lf = fopen("/root/AI4Mem/preload_replayer.log", "a");
+        FILE *lf = fopen("./preload_replayer.log", "a");
         if (lf) {
             char tb[64];
             time_t t = time(NULL);
@@ -125,7 +157,7 @@ static void preload_replayer_init(void) {
     pthread_t th;
     if (pthread_create(&th, NULL, watch_and_prefetch, cfg) == 0) {
         pthread_detach(th);
-        FILE *lf = fopen("/root/AI4Memv2/preload_replayer.log", "a");
+        FILE *lf = fopen("./preload_replayer.log", "a");
         if (lf) {
             char tb[64];
             time_t t = time(NULL);

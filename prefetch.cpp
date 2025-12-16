@@ -47,6 +47,29 @@ static void prefetcher_log(const std::string &msg) {
     lf << std::put_time(std::localtime(&t), "%F %T") << ": " << msg << std::endl;
 }
 
+// When the shared object is loaded, write a tiny file so we can detect which SO was loaded.
+__attribute__((constructor)) static void prefetcher_on_load() {
+    const char *loaded_path = "/root/AI4Memv3/prefetcher_loaded.log";
+    FILE *f = fopen(loaded_path, "a");
+    if (f) {
+        char tb[64];
+        time_t t = time(NULL);
+        strftime(tb, sizeof(tb), "%F %T", localtime(&t));
+        fprintf(f, "%s: libuvm_prefetcher.so loaded (pid=%d)\n", tb, getpid());
+        fclose(f);
+    }
+    // Also try a quick write to the main prefetcher.log so we don't depend on C++ streams here.
+    const char *logpath = "/root/AI4Memv3/prefetcher.log";
+    FILE *lf = fopen(logpath, "a");
+    if (lf) {
+        char tb2[64];
+        time_t t2 = time(NULL);
+        strftime(tb2, sizeof(tb2), "%F %T", localtime(&t2));
+        fprintf(lf, "%s: lib loaded constructor write (pid=%d)\n", tb2, getpid());
+        fclose(lf);
+    }
+}
+
 // forward declaration for chunked prefetcher helper
 static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id, bool sync);
 static void do_prefetch_once_internal() {
