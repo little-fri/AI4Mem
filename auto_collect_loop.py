@@ -53,7 +53,7 @@ def copy_latest_to_data():
     try:
         shutil.copyfile(src, DATA_CSV + '.tmp')
         os.replace(DATA_CSV + '.tmp', DATA_CSV)
-        print(f"已拷贝 {os.path.basename(src)} -> data.csv")
+       # print(f"已拷贝 {os.path.basename(src)} -> data.csv")
         return True
     except Exception as e:
         print('拷贝 UVM 日志失败:', e)
@@ -86,16 +86,16 @@ def prune_rotated_files(keep_latest=True):
 def run_preprocess(csv_path, out_path, seq, vocab, horizon):
     # 强制增加 --fit 参数，确保适应新地址
     cmd = [sys.executable, os.path.join(ROOT, 'preprocess.py'), '--fit']
-    print('  [Sync] Running preprocess:', ' '.join(cmd))
+   # print('  [Sync] Running preprocess:', ' '.join(cmd))
     subprocess.run(cmd, check=True)
 
 def run_infer(model_path, data_path, csv_path, out_path):
     cmd = [sys.executable, os.path.join(ROOT, 'infer.py')]
-    print('  [Sync] Running infer:', ' '.join(cmd))
+    #print('  [Sync] Running infer:', ' '.join(cmd))
     subprocess.run(cmd, check=True)
 
 # === 新增：后台异步训练函数 ===
-def start_train_bg(epoch=1):
+def start_train_bg(epoch=30):
     global current_train_proc
     
     # 1. 检查之前的训练是否还在跑
@@ -168,7 +168,7 @@ def main():
                 except Exception:
                     mtime = 0
                 if mtime > last_mtime:
-                    print('>>> 检测到新数据，开始 AI 流水线 <<<')
+                   # print('>>> 检测到新数据，开始 AI 流水线 <<<')
                     if not file_contains_uvm(DATA_CSV):
                         print('data.csv 暂无 UVM 事件，跳过本轮')
                         continue

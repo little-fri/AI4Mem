@@ -29,7 +29,7 @@ int main() {
     size_t size = N * sizeof(float);
 
     // 1. 分配 Unified Memory
-    std::cout << "Allocating " << size / (1024*1024) << " MB Unified Memory..." << std::endl;
+    std::cout << "[test]：分配 " << size / (1024*1024) << " MB UVM..." << std::endl;
     cudaError_t err = cudaMallocManaged(&uvm_data, size);
     if (err != cudaSuccess) {
         std::cerr << "cudaMallocManaged failed: " << cudaGetErrorString(err) << std::endl;
@@ -37,7 +37,7 @@ int main() {
     }
 
     // 2. 初始化 (在 CPU 上做，确保页面在 Host 端)
-    std::cout << "Initializing data on CPU..." << std::endl;
+    std::cout << "[test]：初始化数据在 CPU..." << std::endl;
     for (size_t i = 0; i < N; ++i) {
         uvm_data[i] = 0.0f;
     }
@@ -51,8 +51,7 @@ int main() {
     int steps = 200; 
     size_t chunk_size = N / steps; 
     
-    std::cout << "Starting 20s workload on GPU..." << std::endl;
-    std::cout << "Events will be spread over time..." << std::endl;
+    std::cout << "[test]: 程序开始运行" << std::endl;
 
     int iter = 0;
     while (true) {
@@ -93,7 +92,7 @@ int main() {
         iter++;*/
     }
 
-    std::cout << "Workload finished." << std::endl;
+    std::cout << "[test]: 程序运行结束." << std::endl;
     cudaFree(uvm_data);
     return 0;
 }

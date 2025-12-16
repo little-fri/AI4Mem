@@ -59,7 +59,7 @@ def smart_load_weights(model, state_dict):
             old_rows = param.shape[0]
             new_rows = current_param.shape[0]
             if new_rows > old_rows:
-                print(f"   Expanding {name}: {old_rows} -> {new_rows}")
+                print(f"[train]: 拓展 {name}: {old_rows} -> {new_rows}")
                 # 复制旧权重
                 model_dict[name][:old_rows, :].copy_(param)
                 # 新增的权重保持随机初始化
@@ -69,7 +69,7 @@ def smart_load_weights(model, state_dict):
             # 检查是否是输出维度变了 (dim 0)
             if param.shape[0] < current_param.shape[0]:
                 old_out = param.shape[0]
-                print(f"   Expanding {name}: {old_out} -> {current_param.shape[0]}")
+                print(f"[train]: 扩展 {name}: {old_out} -> {current_param.shape[0]}")
                 # fc.weight: [out_features, in_features]
                 if 'weight' in name:
                     model_dict[name][:old_out, :].copy_(param)
@@ -82,7 +82,7 @@ def smart_load_weights(model, state_dict):
 def train(epochs):
     if not os.path.exists(DATA_FILE): return
 
-    print("Loading Data...")
+    print("[train]：加载数据")
     data_pkg = joblib.load(DATA_FILE)
     vocab = data_pkg['vocab_sizes']
     train_X = data_pkg['train_data']['X']
@@ -93,17 +93,17 @@ def train(epochs):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     # 1. 实例化新维度的模型
-    print(f"Target Vocab: {vocab}")
+    print(f"[train]: 目标 Vocab: {vocab}")
     model = HotPageLSTM(vocab['num_kernels'], vocab['num_events'], vocab['num_pages']).to(device)
     
     # 2. 加载旧权重并自动扩展
     if os.path.exists(MODEL_FILE):
-        print("Loading and Expanding old model weights...")
+        print("[train]: 加载并扩展旧模型权重...")
         try:
             old_state = torch.load(MODEL_FILE)
             smart_load_weights(model, old_state['model_state_dict'])
         except Exception as e:
-            print(f"Weight loading failed: {e}, starting fresh.")
+            print(f"[train]: 权重加载错误: {e}, 刷新.")
     
     # 3. 训练
     model.train()
@@ -112,7 +112,7 @@ def train(epochs):
     dataset = TensorDataset(train_X, train_Y)
     dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
     
-    print(f"Training {epochs} epochs...")
+    print(f"[train]: 训练 {epochs} epochs...")
     for epoch in range(epochs):
         for bx, by in dataloader:
             bx, by = bx.to(device), by.to(device)
@@ -125,7 +125,7 @@ def train(epochs):
         'model_state_dict': model.state_dict(),
         'vocab_sizes': vocab 
     }, MODEL_FILE)
-    print(f"Model saved.")
+    print(f"[train]: 模型已保存.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

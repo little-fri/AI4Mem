@@ -37,14 +37,14 @@ def find_timestamp(row):
     return np.nan
 
 def preprocess():
-    print(f"1. Reading {INPUT_FILE}...")
+    print(f"[preprocess]: 1.读取 {INPUT_FILE}]")
     try:
         df = pd.read_csv(INPUT_FILE, header=None, names=[f'Col_{i}' for i in range(30)], low_memory=False)
         if str(df.iloc[0]['Col_0']).strip() == 'Category':
             df = df.iloc[1:].copy()
         df['Category'] = df['Col_0'].astype(str).str.strip()
     except Exception as e:
-        print(f"Error reading CSV: {e}")
+        print(f"[preprocess]: Error reading CSV: {e}")
         return
 
     # 清洗数据
@@ -64,7 +64,7 @@ def preprocess():
     df_final = df_final.sort_values('StartTime_ns').reset_index(drop=True)
 
     if len(df_final) == 0:
-        print("No valid data found.")
+        print("[preprocess]: No valid data found.")
         return
 
     # 上下文填充
@@ -76,7 +76,7 @@ def preprocess():
     target_df['PagePFN'] = target_df['Address'].apply(parse_address)
 
     # === 关键修改：增量编码 ===
-    print("2. Incremental Encoding...")
+    print("[preprocess]: 2. 编码数据")
     
     # 1. 加载或新建 Encoder
     addr_enc = utils.IncrementalLabelEncoder().load(ADDR_ENC_PATH)
@@ -98,7 +98,7 @@ def preprocess():
     kernel_ids = kernel_enc.transform(target_df['CurrentKernel'].values)
     event_ids = event_enc.transform(target_df['EventName'].values)
 
-    print(f"   Current Vocab: Pages={len(addr_enc)}, Kernels={len(kernel_enc)}")
+    print(f"[preprocess]: 当前 Vocab: Pages={len(addr_enc)}, Kernels={len(kernel_enc)}")
 
     # 序列构建
     target_df['TimeDelta'] = target_df['StartTime_ns'].diff().fillna(0)
@@ -143,7 +143,7 @@ def preprocess():
     }
 
     joblib.dump(data_package, DATA_PACKAGE_FILE)
-    print(f"3. Saved processed data to {DATA_PACKAGE_FILE}")
+    print(f"[preprocess]: 3. 保存预处理数据到 {DATA_PACKAGE_FILE}")
 
 if __name__ == "__main__":
     preprocess()
