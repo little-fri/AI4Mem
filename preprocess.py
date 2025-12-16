@@ -1,143 +1,149 @@
-import os
-import re
-import json
-import argparse
-from collections import Counter
-
 import pandas as pd
 import numpy as np
 import torch
 import joblib
+import os
+import utils # 导入刚才写的 utils.py
 
-PAGE_SIZE = 4096
+# === 配置 ===
+INPUT_FILE = 'data.csv'
+OUTPUT_DIR = 'data_cache'
+DATA_PACKAGE_FILE = os.path.join(OUTPUT_DIR, 'processed_data.pkl')
+SEQUENCE_LENGTH = 10
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-def robust_parse_uvm(csv_path):
-    # read lines and rebuild logical records using rsplit or field count
-    with open(csv_path, 'r', errors='ignore') as f:
-        lines = f.readlines()
-    if not lines:
-        return None
-    body = lines[1:]
-    records = []
-    cur = ''
-    EXPECTED = 8
-    for raw in body:
-        s = raw.rstrip('\n')
-        if not s:
-            continue
-        if cur == '':
-            cur = s
-        else:
-            cur += s
-        # prefer rsplit to keep EventName commas
-        if len(cur.rsplit(',', EXPECTED-1)) == EXPECTED:
-            records.append(cur)
-            cur = ''
-        else:
-            # also accept if simple split has >= EXPECTED
-            if len(cur.split(',')) >= EXPECTED:
-                records.append(cur)
-                cur = ''
-    if cur:
-        records.append(cur)
+# 路径定义
+ADDR_ENC_PATH = os.path.join(OUTPUT_DIR, 'addr_encoder.pkl')
+KERNEL_ENC_PATH = os.path.join(OUTPUT_DIR, 'kernel_encoder.pkl')
+EVENT_ENC_PATH = os.path.join(OUTPUT_DIR, 'event_encoder.pkl')
 
-    data = []
-    for rec in records:
-        if not rec.startswith('UVM'):
-            continue
-        if ('GPU_PAGE_FAULT' not in rec) and ('MIGRATE_HtoD' not in rec):
-            continue
-        parts = rec.rsplit(',', 7)
-        addr = ''
-        ts = ''
-        if len(parts) >= 4:
-            addr = parts[2].strip()
-            ts = parts[3].strip()
-        if not addr or not addr.startswith('0x'):
-            m = re.search(r'0x[0-9a-fA-F]+', rec)
-            addr = m.group(0) if m else ''
-        if not ts or not ts.isdigit():
-            m2 = re.search(r'\b(\d{8,})\b', rec)
-            ts = m2.group(1) if m2 else ''
-        if addr and ts and ts.isdigit():
-            data.append({'timestamp': int(ts), 'abs_addr': int(addr,16)})
+def parse_address(addr_str):
+    try:
+        if isinstance(addr_str, str):
+            if addr_str.strip() == '': return 0
+            return int(addr_str, 16) >> 12
+        return int(addr_str) >> 12
+    except:
+        return 0
 
-    df = pd.DataFrame(data)
-    if df.empty:
-        return None
-    df = df.sort_values('timestamp').drop_duplicates().reset_index(drop=True)
-    return df
+def find_timestamp(row):
+    for i in range(2, 20):
+        col_name = f'Col_{i}'
+        if col_name not in row: continue
+        try:
+            val = float(row[col_name])
+            if val > 1e16: return val
+        except: continue
+    return np.nan
 
-def build_vocab(page_idxs, top_k):
-    freq = Counter(page_idxs)
-    most = [p for p,_ in freq.most_common(top_k)]
-    page2idx = {p:i for i,p in enumerate(most)}
-    return page2idx
+def preprocess():
+    print(f"1. Reading {INPUT_FILE}...")
+    try:
+        df = pd.read_csv(INPUT_FILE, header=None, names=[f'Col_{i}' for i in range(30)], low_memory=False)
+        if str(df.iloc[0]['Col_0']).strip() == 'Category':
+            df = df.iloc[1:].copy()
+        df['Category'] = df['Col_0'].astype(str).str.strip()
+    except Exception as e:
+        print(f"Error reading CSV: {e}")
+        return
 
-def make_sequences(df, seq_length=10, horizon_ns=2_000_000_000, vocab_size=4096):
-    base_addr = df['abs_addr'].min() & ~(PAGE_SIZE-1)
-    df['page_idx'] = (df['abs_addr'] - base_addr) // PAGE_SIZE
+    # 清洗数据
+    uvm_mask = df['Category'] == 'UVM'
+    df_uvm = df[uvm_mask].copy()
+    df_uvm['EventName'] = df_uvm['Col_1'].str.strip()
+    df_uvm['Address'] = df_uvm['Col_2']
+    df_uvm['StartTime_ns'] = pd.to_numeric(df_uvm['Col_3'], errors='coerce')
 
-    page2idx = build_vocab(df['page_idx'].tolist(), vocab_size)
-    oov_id = len(page2idx)
+    kernel_mask = df['Category'] == 'KERNEL'
+    df_kernel = df[kernel_mask].copy()
+    df_kernel['EventName'] = df_kernel['Col_1'].str.strip()
+    df_kernel['Address'] = 0
+    df_kernel['StartTime_ns'] = df_kernel.apply(find_timestamp, axis=1)
 
-    X = []
-    Y = []
-    timestamps = []
-    addrs = []
+    df_final = pd.concat([df_uvm, df_kernel]).dropna(subset=['StartTime_ns'])
+    df_final = df_final.sort_values('StartTime_ns').reset_index(drop=True)
 
-    N = len(df)
-    for i in range(0, N - seq_length):
-        seq = df['page_idx'].iloc[i:i+seq_length].tolist()
-        t_end = df['timestamp'].iloc[i+seq_length-1]
-        future = df[(df['timestamp']>t_end) & (df['timestamp']<= t_end + horizon_ns)]['page_idx'].unique().tolist()
-        if len(future) == 0:
-            continue
-        seq_ids = [page2idx.get(p, oov_id) for p in seq]
-        y = np.zeros(len(page2idx), dtype=np.uint8)
-        for p in future:
-            if p in page2idx:
-                y[page2idx[p]] = 1
-        if y.sum() == 0:
-            continue
-        X.append(seq_ids)
-        Y.append(y)
-        timestamps.append(t_end)
-        addrs.append(df['abs_addr'].iloc[i+seq_length-1])
+    if len(df_final) == 0:
+        print("No valid data found.")
+        return
 
-    X = np.array(X, dtype=np.int64)
-    Y = np.array(Y, dtype=np.uint8)
-    meta = {'base_addr': int(base_addr), 'page_size': PAGE_SIZE, 'vocab_size': len(page2idx), 'oov_id': oov_id}
-    return X, Y, np.array(timestamps), np.array(addrs), page2idx, meta
+    # 上下文填充
+    df_final['CurrentKernel'] = 'IDLE'
+    df_final.loc[df_final['Category'] == 'KERNEL', 'CurrentKernel'] = df_final['EventName']
+    df_final['CurrentKernel'] = df_final['CurrentKernel'].replace('IDLE', np.nan).ffill().fillna('IDLE')
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--input', default='uvm_monitor_result.csv')
-    parser.add_argument('--out', default='train_data.pth')
-    parser.add_argument('--vocab', type=int, default=4096)
-    parser.add_argument('--seq', type=int, default=10)
-    parser.add_argument('--horizon', type=float, default=2.0)
-    args = parser.parse_args()
+    target_df = df_final[df_final['Category'] == 'UVM'].copy()
+    target_df['PagePFN'] = target_df['Address'].apply(parse_address)
 
-    path = args.input
-    if not os.path.exists(path):
-        print('input not found:', path); return
-    df = robust_parse_uvm(path)
-    if df is None or df.empty:
-        print('no uvm events parsed'); return
+    # === 关键修改：增量编码 ===
+    print("2. Incremental Encoding...")
+    
+    # 1. 加载或新建 Encoder
+    addr_enc = utils.IncrementalLabelEncoder().load(ADDR_ENC_PATH)
+    kernel_enc = utils.IncrementalLabelEncoder().load(KERNEL_ENC_PATH)
+    event_enc = utils.IncrementalLabelEncoder().load(EVENT_ENC_PATH)
+    
+    # 2. 增量学习 (把新出现的词加入字典)
+    addr_enc.partial_fit(target_df['PagePFN'].values)
+    kernel_enc.partial_fit(target_df['CurrentKernel'].values)
+    event_enc.partial_fit(target_df['EventName'].values)
+    
+    # 3. 保存更新后的 Encoder
+    addr_enc.save(ADDR_ENC_PATH)
+    kernel_enc.save(KERNEL_ENC_PATH)
+    event_enc.save(EVENT_ENC_PATH)
+    
+    # 4. 转换数据
+    page_ids = addr_enc.transform(target_df['PagePFN'].values)
+    kernel_ids = kernel_enc.transform(target_df['CurrentKernel'].values)
+    event_ids = event_enc.transform(target_df['EventName'].values)
 
-    X, Y, ts, addrs, page2idx, meta = make_sequences(df, seq_length=args.seq, horizon_ns=int(args.horizon*1e9), vocab_size=args.vocab)
-    if len(X) == 0:
-        print('no training sequences generated')
-    else:
-        print('generated', len(X), 'samples; vocab_size=', meta['vocab_size'])
+    print(f"   Current Vocab: Pages={len(addr_enc)}, Kernels={len(kernel_enc)}")
 
-    obj = {'X': torch.tensor(X, dtype=torch.int64), 'Y': torch.tensor(Y, dtype=torch.uint8), 'timestamps': ts, 'addrs': addrs}
-    torch.save(obj, args.out)
-    joblib.dump(page2idx, args.out + '.page2idx.pkl')
-    with open(args.out + '.meta.json','w') as f:
-        json.dump(meta, f)
-    print('saved', args.out)
+    # 序列构建
+    target_df['TimeDelta'] = target_df['StartTime_ns'].diff().fillna(0)
+    target_df['LogDelta'] = np.log1p(target_df['TimeDelta'])
+    log_deltas = target_df['LogDelta'].values
 
-if __name__ == '__main__':
-    main()
+    data_X, data_Y = [], []
+    if len(target_df) > SEQUENCE_LENGTH:
+        for i in range(len(target_df) - SEQUENCE_LENGTH):
+            x_seq = np.stack([
+                kernel_ids[i:i+SEQUENCE_LENGTH],
+                event_ids[i:i+SEQUENCE_LENGTH],
+                log_deltas[i:i+SEQUENCE_LENGTH],
+                page_ids[i:i+SEQUENCE_LENGTH]
+            ], axis=1)
+            data_X.append(x_seq)
+            data_Y.append(page_ids[i + SEQUENCE_LENGTH])
+
+    # 准备上下文
+    last_ctx = None
+    if len(target_df) >= SEQUENCE_LENGTH:
+        last_ctx = {
+            'kernels': kernel_ids[-SEQUENCE_LENGTH:],
+            'events': event_ids[-SEQUENCE_LENGTH:],
+            'deltas': log_deltas[-SEQUENCE_LENGTH:],
+            'pages': page_ids[-SEQUENCE_LENGTH:],
+            'last_timestamp': target_df['StartTime_ns'].values[-1]
+        }
+
+    # 保存
+    data_package = {
+        'vocab_sizes': {
+            'num_pages': len(addr_enc),
+            'num_kernels': len(kernel_enc),
+            'num_events': len(event_enc)
+        },
+        'train_data': {
+            'X': torch.tensor(np.array(data_X), dtype=torch.float32) if data_X else torch.empty(0),
+            'Y': torch.tensor(np.array(data_Y), dtype=torch.long) if data_Y else torch.empty(0)
+        },
+        'infer_context': last_ctx
+    }
+
+    joblib.dump(data_package, DATA_PACKAGE_FILE)
+    print(f"3. Saved processed data to {DATA_PACKAGE_FILE}")
+
+if __name__ == "__main__":
+    preprocess()

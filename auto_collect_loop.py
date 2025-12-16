@@ -111,18 +111,20 @@ def prune_rotated_files(keep_latest=True):
 
 
 def run_preprocess(csv_path, out_path, seq, vocab, horizon):
-    cmd = [sys.executable, os.path.join(ROOT, 'preprocess.py'), '--input', csv_path, '--out', out_path,
-           '--seq', str(seq), '--vocab', str(vocab), '--horizon', str(horizon)]
+    cmd = [sys.executable, os.path.join(ROOT, 'preprocess.py'),'--fit']
     print('  Running preprocess:', ' '.join(cmd))
     subprocess.run(cmd, check=True)
 
 
 def run_infer(model_path, data_path, csv_path, out_path):
-    cmd = [sys.executable, os.path.join(ROOT, 'infer.py'), '--model', model_path,
-           '--data', data_path, '--csv', csv_path, '--out', out_path]
+    cmd = [sys.executable, os.path.join(ROOT, 'infer.py')]
     print('  Running infer:', ' '.join(cmd))
     subprocess.run(cmd, check=True)
 
+def run_train(epoch):
+    cmd = [sys.executable, os.path.join(ROOT, 'train_model.py'), '--epoch', str(epoch)]
+    print('  Running train (Updating vocab):', ' '.join(cmd))
+    subprocess.run(cmd, check=True)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -144,19 +146,6 @@ def main():
     if not os.path.exists(COLLECTOR_SO):
         print('找不到 data_collector.so 于', COLLECTOR_SO)
         sys.exit(1)
-
-    # 清理旧的 data.csv
-    if os.path.exists(DATA_CSV):
-        try:
-            os.remove(DATA_CSV)
-        except Exception:
-            pass
-    # 清理旧的 total_data.csv（按需）
-    if args.total_log and os.path.exists(args.total_path):
-        try:
-            os.remove(args.total_path)
-        except Exception:
-            pass
 
     env = os.environ.copy()
     env['LD_PRELOAD'] = COLLECTOR_SO
@@ -193,6 +182,7 @@ def main():
                     last_mtime = mtime
                     try:
                         run_preprocess(DATA_CSV, args.data_out, args.seq, args.vocab, args.horizon)
+                        run_train(epoch=1)
                         run_infer(args.model, args.data_out, DATA_CSV, args.pred_out)
                     except subprocess.CalledProcessError as e:
                         print('子进程失败，返回码', e.returncode)
@@ -209,11 +199,9 @@ def main():
                     if os.path.exists(DATA_CSV) and file_contains_uvm(DATA_CSV):
                         if args.total_log:
                             append_to_total(DATA_CSV, args.total_path, separator_ts=time.strftime('%Y-%m-%d %H:%M:%S') if args.total_sep else None)
-                        try:
                             run_preprocess(DATA_CSV, args.data_out, args.seq, args.vocab, args.horizon)
+                            run_train(epoch=1)
                             run_infer(args.model, args.data_out, DATA_CSV, args.pred_out)
-                        except subprocess.CalledProcessError as e:
-                            print('最终处理失败，返回码', e.returncode)
                         break
                     time.sleep(1)
                 break

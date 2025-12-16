@@ -1,68 +1,99 @@
-#include <stdio.h>
+#include <iostream>
 #include <cuda_runtime.h>
-#include<unistd.h>
-// 数组大小：约 20M 个 float，约 80MB
-// 我们把 N 调小到 ~20M，使 test 程序总运行时间大约在 20s 左右（每批 sleep 1s）
-#define N (20 * 1024 * 1024)
-#define BLOCK_SIZE 1024
+#include <unistd.h>
+#include <sys/time.h>
+#include <vector>
 
-__global__ void vector_add_uvm(float *a, float *b, float *c, int n) {
-    int idx = blockIdx.x * blockDim.x + threadIdx.x;
-    if (idx < n) {
-        // GPU 尝试读取 a[idx] 和 b[idx]
-        // 如果这些数据在 CPU 内存中，这里会触发 GPU_PAGE_FAULT
-        c[idx] = a[idx] + b[idx];
+// 定义总数据大小 (例如 4GB float)
+// A800 显存很大，我们可以分配大一点以避免 Cache 命中
+#define N (1024 * 1024 * 1024L) // 1 Billion floats = 4GB
+
+// Kernel: 简单的向量加法，甚至更简单，只是为了触发缺页
+__global__ void uvm_touch_kernel(float* data, size_t offset, size_t size, float val) {
+    size_t idx = blockIdx.x * blockDim.x + threadIdx.x;
+    if (idx < size) {
+        // 读取并写入，触发缺页
+        data[offset + idx] += val;
     }
-    for (volatile int i = 0; i < 100000; i++); // 空循环延时
+}
+
+// 获取当前时间戳 (秒)
+double get_time() {
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return tv.tv_sec + tv.tv_usec * 1e-6;
 }
 
 int main() {
-    float *a, *b, *c;
-    size_t bytes = N * sizeof(float);
+    float *uvm_data;
+    size_t size = N * sizeof(float);
 
-    printf("Allocating %zu bytes of Unified Memory...\n", bytes * 3);
-
-    // 1. 分配 UVM 内存
-    cudaMallocManaged(&a, bytes);
-    cudaMallocManaged(&b, bytes);
-    cudaMallocManaged(&c, bytes);
-
-    // 2. [关键步骤] 在 CPU 上初始化数据
-    // 这会将物理页“钉”在 CPU 内存（Host Memory）中
-    printf("Initializing data on CPU (forcing pages to Host RAM)...\n");
-    for (int i = 0; i < N; i++) {
-        a[i] = 1.0f;
-        b[i] = 2.0f;
+    // 1. 分配 Unified Memory
+    std::cout << "Allocating " << size / (1024*1024) << " MB Unified Memory..." << std::endl;
+    cudaError_t err = cudaMallocManaged(&uvm_data, size);
+    if (err != cudaSuccess) {
+        std::cerr << "cudaMallocManaged failed: " << cudaGetErrorString(err) << std::endl;
+        return -1;
     }
 
-    // 3. 启动 GPU Kernel
-    // GPU 开始执行，发现数据不在显存，必须触发缺页中断从 CPU 拉取数据
-    int gridSize = (N + BLOCK_SIZE - 1) / BLOCK_SIZE;
-    printf("Launching Kernel (Expect Page Faults now!)...\n");
+    // 2. 初始化 (在 CPU 上做，确保页面在 Host 端)
+    std::cout << "Initializing data on CPU..." << std::endl;
+    for (size_t i = 0; i < N; ++i) {
+        uvm_data[i] = 0.0f;
+    }
+
+    // 3. 循环运行 20 秒
+    double start_time = get_time();
+    double duration = 20.0; // 目标运行 20 秒
     
-    int batch = 1024*1024; // 每批 1M 元素
-for (int start = 0; start < N; start += batch) {
-    int len = min(batch, N - start);
-    int gridSize = (len + BLOCK_SIZE - 1) / BLOCK_SIZE;
-    vector_add_uvm<<<gridSize, BLOCK_SIZE>>>(a+start, b+start, c+start, len);
-    cudaDeviceSynchronize();
-   // sleep(1); // 每批迁移之间睡 1 秒
-}
+    // 将内存分成很多小块，慢慢吃
+    // 假设我们希望每 100ms (0.1s) 触发一次
+    int steps = 200; 
+    size_t chunk_size = N / steps; 
+    
+    std::cout << "Starting 20s workload on GPU..." << std::endl;
+    std::cout << "Events will be spread over time..." << std::endl;
 
-    // 等待 GPU 完成
-    cudaDeviceSynchronize();
+    int iter = 0;
+    while (true) {
+        double current_time = get_time();
+        if (current_time - start_time >= duration) break;
 
-    printf("Kernel finished.\n");
+        // 计算当前要访问的内存偏移量 (循环访问，防止越界)
+        // 这种顺序访问模式对于你的 LSTM 预测步长非常有帮助
+        size_t offset = (iter * chunk_size) % N;
+        
+        // --- 关键点 A: CPU 先摸一下 ---
+        // 这确保如果这块内存之前在 GPU，现在会被拉回 CPU，
+        // 或者确保它处于 System Memory 中。
+        // 我们只摸 chunk 的第一个元素及少量元素以节省 CPU 时间
+        uvm_data[offset] += 1.0f; 
 
-    // 验证一下结果（可选，防止编译器优化掉 kernel）
-    // 再次在 CPU 访问 c，可能再次触发缺页（从 GPU 迁回 CPU）
-    if (c[0] == 3.0f) {
-        printf("Verification Success!\n");
+        // --- 关键点 B: GPU 访问 ---
+        // 启动 Kernel 访问这块内存 -> 触发 HtoD 迁移
+        int threads = 256;
+        int blocks = (chunk_size + threads - 1) / threads;
+        
+        uvm_touch_kernel<<<blocks, threads>>>(uvm_data, offset, chunk_size, 1.0f);
+        
+        // 同步，确保 Fault 发生
+        cudaDeviceSynchronize();
+
+        // --- 关键点 C: 控制时间 ---
+        // 每次迭代大概睡 100ms (100,000 微秒)
+        // A800很快，Kernel瞬间执行完，所以大部分时间在 sleep，
+        // 但 UVM 事件会记录在 Kernel 启动的那一瞬间。
+        usleep(100000); 
+/*
+        // 打印进度条
+        if (iter % 10 == 0) {
+            printf("Time: %.1fs / %.1fs | Accessed Offset: 0x%lx\n", 
+                   current_time - start_time, duration, offset * sizeof(float));
+        }
+        iter++;*/
     }
 
-    cudaFree(a);
-    cudaFree(b);
-    cudaFree(c);
-
+    std::cout << "Workload finished." << std::endl;
+    cudaFree(uvm_data);
     return 0;
 }

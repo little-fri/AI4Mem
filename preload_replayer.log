@@ -1,0 +1,502 @@
+2025-12-16 11:27:09: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:09: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:09: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:09: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:14: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:14: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:14: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:14: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:16: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:16: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:16: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:16: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:18: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:18: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:18: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:18: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:20: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:20: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:27:20: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:27:20: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:20: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:20: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:20: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:20: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:25: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:25: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:25: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:25: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:27: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:27: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:27: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:27: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:29: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:29: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:30: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:30: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:31: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:31: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:28:31: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:28:31: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:10: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:10: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:10: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:10: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:10: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:10: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:15: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:15: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:15: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:16: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:16: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:16: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:17: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:17: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:17: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:17: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:17: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:17: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:20: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:20: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:20: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:20: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:20: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:20: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:21: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:21: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:21: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:38:22: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:38:22: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:38:22: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:41:53: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:41:53: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:41:53: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:41:53: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:41:53: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:41:53: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:41:58: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:41:58: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:41:58: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:41:59: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:41:59: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:41:59: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:42:00: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:42:00: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:42:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:42:00: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:42:00: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:42:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:42:03: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:42:03: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:42:03: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:42:03: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:42:03: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:42:03: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:42:04: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:42:04: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:42:04: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 11:42:05: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 11:42:05: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 11:42:05: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765855908), calling prefetcher
+2025-12-16 12:37:00: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:00: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859748), calling prefetcher
+2025-12-16 12:37:00: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:00: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859748), calling prefetcher
+2025-12-16 12:37:05: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:05: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:05: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859748), calling prefetcher
+2025-12-16 12:37:05: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:05: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:05: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859748), calling prefetcher
+2025-12-16 12:37:07: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:07: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:07: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859748), calling prefetcher
+2025-12-16 12:37:07: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:07: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:07: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859748), calling prefetcher
+2025-12-16 12:37:09: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859829), calling prefetcher
+2025-12-16 12:37:09: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:09: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:09: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859829), calling prefetcher
+2025-12-16 12:37:09: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:09: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:09: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859829), calling prefetcher
+2025-12-16 12:37:11: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:11: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:11: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859829), calling prefetcher
+2025-12-16 12:37:11: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:37:11: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:37:11: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859829), calling prefetcher
+2025-12-16 12:39:21: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:21: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:21: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859833), calling prefetcher
+2025-12-16 12:39:21: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:21: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:21: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859833), calling prefetcher
+2025-12-16 12:39:26: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:26: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:26: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859833), calling prefetcher
+2025-12-16 12:39:26: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:26: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:26: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859833), calling prefetcher
+2025-12-16 12:39:27: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:27: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:27: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859833), calling prefetcher
+2025-12-16 12:39:27: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:27: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:27: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859833), calling prefetcher
+2025-12-16 12:39:30: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859969), calling prefetcher
+2025-12-16 12:39:30: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:30: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:30: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859969), calling prefetcher
+2025-12-16 12:39:30: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:30: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:30: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859969), calling prefetcher
+2025-12-16 12:39:32: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:32: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:32: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859969), calling prefetcher
+2025-12-16 12:39:32: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:39:32: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:39:32: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859969), calling prefetcher
+2025-12-16 12:40:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:40:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:40:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:40:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:40:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:40:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:40:56: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:40:56: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:40:56: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:02: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:02: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:02: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:02: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:02: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:02: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:23: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:23: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:23: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:23: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:23: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:23: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:28: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:28: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:29: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:34: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:34: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:34: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:41:34: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:41:34: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:41:34: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:42:43: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:42:43: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:42:43: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:42:43: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:42:43: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:42:43: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:42:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:42:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:42:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:42:53: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:42:53: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:42:53: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:42:53: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:42:53: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:42:53: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:49: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:49: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:49: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:49: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:49: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:49: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:56: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:56: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:56: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:56: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:56: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:56: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:58: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:58: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:58: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:43:58: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:43:58: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:43:58: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:00: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:00: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:00: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:00: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:39: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:39: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:39: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:39: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:39: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:39: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:44: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:44: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:44: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:44: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:44: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:44: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:49: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:49: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:49: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:50: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:50: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:50: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:44:50: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:44:50: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:44:50: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:53: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:53: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:53: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:53: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:53: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:53: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:55: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:55: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:55: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:55: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:55: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:55: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:57: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:57: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:57: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:46:57: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:46:57: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:46:57: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:39: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:39: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:39: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:39: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:39: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:39: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:44: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:44: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:44: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:44: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:44: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:44: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:49: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:49: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:49: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:50: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:50: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:50: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:51:50: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:51:50: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:51:50: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:21: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:21: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:21: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:21: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:21: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:21: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:26: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:26: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:26: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:26: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:26: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:26: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:28: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:28: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:28: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:28: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:28: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:28: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:30: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:30: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:30: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:30: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:30: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:30: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:32: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:32: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:32: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:32: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:32: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:32: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:36: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:36: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:36: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:54:36: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:54:36: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:54:36: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765859974), calling prefetcher
+2025-12-16 12:56:43: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:43: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:43: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:43: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:43: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:43: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:50: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:50: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:50: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:50: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:50: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:50: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:52: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:52: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:52: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:52: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:52: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:52: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:58: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:58: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:58: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:56:58: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 12:56:58: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 12:56:58: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765860878), calling prefetcher
+2025-12-16 12:57:00: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:46: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:46: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:46: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:52: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:52: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:52: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:52: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:52: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:52: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:56: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:56: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:56: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:01:56: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:01:56: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:01:56: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:42: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:42: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:42: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:42: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:42: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:42: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:49: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:49: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:49: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:49: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:49: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:49: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:51: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:51: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:51: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:52: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:52: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:52: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:52: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:52: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:52: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:02:54: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:02:54: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:02:54: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:37: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:37: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:37: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:37: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:37: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:37: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:42: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:42: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:42: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:42: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:42: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:42: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:44: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:44: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:44: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:44: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:44: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:44: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:45: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:45: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:45: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:45: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:45: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:45: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:47: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:47: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:47: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:47: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:47: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:47: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher
+2025-12-16 13:03:48: preload_replayer init: csv=/root/AI4Mem/predictions.csv device=0 sync=0 delay=0
+2025-12-16 13:03:48: calling initial prefetch for /root/AI4Mem/predictions.csv
+2025-12-16 13:03:48: watcher detected mtime change for /root/AI4Mem/predictions.csv (mtime=1765861020), calling prefetcher

@@ -12,11 +12,9 @@
 #include <stdint.h>
 #include <atomic>
 #include <stdio.h>
-#include <ctype.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 #include <cuda_runtime.h>
+#include <ctime>
+#include <iomanip>
 // Debug logging control: set PREFETCH_VERBOSE to 1 to enable verbose stderr logs
 #ifndef PREFETCH_VERBOSE
 #define PREFETCH_VERBOSE 0
@@ -40,31 +38,13 @@ static size_t get_page_size() {
     return ps;
 }
 
-// Check if [addr, addr+len) is covered by any mapping in /proc/self/maps.
-static bool is_addr_in_maps(uint64_t addr, size_t len) {
-    std::ifstream maps("/proc/self/maps");
-    if (!maps.is_open()) return false;
-    std::string line;
-    uint64_t a = addr;
-    uint64_t b = addr + len;
-    while (std::getline(maps, line)) {
-        // format: start-end perms ...
-        size_t dash = line.find('-');
-        if (dash == std::string::npos) continue;
-        std::string s1 = line.substr(0, dash);
-        size_t sp = line.find(' ', dash + 1);
-        if (sp == std::string::npos) continue;
-        std::string s2 = line.substr(dash + 1, sp - dash - 1);
-        uint64_t start = 0, end = 0;
-        try {
-            start = std::stoull(s1, nullptr, 16);
-            end = std::stoull(s2, nullptr, 16);
-        } catch (...) {
-            continue;
-        }
-        if (a >= start && b <= end) return true;
-    }
-    return false;
+// Simple file logger to record which pages/ranges are being prefetched.
+static void prefetcher_log(const std::string &msg) {
+    const char *logpath = "/root/AI4Memv3/prefetcher.log";
+    std::ofstream lf(logpath, std::ios::app);
+    if (!lf.is_open()) return;
+    std::time_t t = std::time(nullptr);
+    lf << std::put_time(std::localtime(&t), "%F %T") << ": " << msg << std::endl;
 }
 
 // forward declaration for chunked prefetcher helper
@@ -157,6 +137,17 @@ static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id
         }
     }
 
+    // Log the computed ranges for debugging
+    {
+        std::ostringstream oss;
+        oss << "prefetch_addresses: computed " << ranges.size() << " ranges. ";
+        for (size_t i = 0; i < ranges.size() && i < 20; ++i) {
+            oss << "[" << std::hex << "0x" << ranges[i].start << "-0x" << ranges[i].end << "]";
+            if (i + 1 < ranges.size()) oss << ",";
+        }
+        prefetcher_log(oss.str());
+    }
+
     cudaError_t cerr;
     int devCount = 0;
     cerr = cudaGetDeviceCount(&devCount);
@@ -179,9 +170,6 @@ static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id
 
     // Chunked prefetch: avoid issuing a single huge prefetch call
     const size_t CHUNK_BYTES = 1 << 20; // 1MB
-    const int MAX_RETRY = 3;
-    const int RETRY_SLEEP_US = 10000; // 10ms
-
     for (auto &r : ranges) {
         uint64_t cur = r.start;
         uint64_t end = r.end;
@@ -189,59 +177,18 @@ static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id
             size_t len = (size_t)std::min<uint64_t>((uint64_t)CHUNK_BYTES, end - cur);
             void *ptr = (void*)(uintptr_t)cur;
             LOGF("uvm_prefetcher: attempting chunked cudaMemPrefetchAsync(%p, %zu) -> device %d\n", ptr, len, device_id);
-            // log attempt to file
-            {
-                FILE *lf = fopen("/root/AI4Memv2/prefetch_file.log", "a");
-                if (lf) {
-                    char tb[64];
-                    time_t t = time(NULL);
-                    strftime(tb, sizeof(tb), "%F %T", localtime(&t));
-                    fprintf(lf, "%s: attempting cudaMemPrefetchAsync(%p, %zu) device=%d\n", tb, ptr, len, device_id);
-                    fclose(lf);
-                }
-            }
-            int attempt = 0;
-            bool done = false;
-            while (attempt < MAX_RETRY && !done) {
-                if (!is_addr_in_maps((uint64_t)(uintptr_t)ptr, len)) {
-                    FILE *lf = fopen("/root/AI4Memv2/prefetch_file.log", "a");
-                    if (lf) {
-                        char tb[64];
-                        time_t t = time(NULL);
-                        strftime(tb, sizeof(tb), "%F %T", localtime(&t));
-                        fprintf(lf, "%s: addr %p len=%zu not in /proc/self/maps (attempt %d/%d)\n", tb, ptr, len, attempt+1, MAX_RETRY);
-                        fclose(lf);
-                    }
-                    ++attempt;
-                    if (attempt < MAX_RETRY) usleep(RETRY_SLEEP_US);
-                    continue;
-                }
-
-                cerr = cudaMemPrefetchAsync(ptr, len, device_id, 0);
-                if (cerr != cudaSuccess) {
-                    fprintf(stderr, "uvm_prefetcher: cudaMemPrefetchAsync(%p, %zu) -> %s\n", ptr, len, cudaGetErrorString(cerr));
-                    FILE *lf = fopen("/root/AI4Memv2/prefetch_file.log", "a");
-                    if (lf) {
-                        char tb[64];
-                        time_t t = time(NULL);
-                        strftime(tb, sizeof(tb), "%F %T", localtime(&t));
-                        fprintf(lf, "%s: cudaMemPrefetchAsync(%p, %zu) -> ERROR: %s (attempt %d/%d)\n", tb, ptr, len, cudaGetErrorString(cerr), attempt+1, MAX_RETRY);
-                        fclose(lf);
-                    }
-                    ++attempt;
-                    if (attempt < MAX_RETRY) usleep(RETRY_SLEEP_US);
-                } else {
-                    LOGF("uvm_prefetcher: Prefetch chunk %p - %p to device %d\n", ptr, (void*)(uintptr_t)(cur + len), device_id);
-                    FILE *lf = fopen("/root/AI4Memv2/prefetch_file.log", "a");
-                    if (lf) {
-                        char tb[64];
-                        time_t t = time(NULL);
-                        strftime(tb, sizeof(tb), "%F %T", localtime(&t));
-                        fprintf(lf, "%s: cudaMemPrefetchAsync(%p, %zu) -> OK (attempt %d/%d)\n", tb, ptr, len, attempt+1, MAX_RETRY);
-                        fclose(lf);
-                    }
-                    done = true;
-                }
+            cerr = cudaMemPrefetchAsync(ptr, len, device_id, 0);
+            if (cerr != cudaSuccess) {
+                std::ostringstream _oss;
+                _oss << "cudaMemPrefetchAsync(" << std::hex << ptr << "," << std::dec << len << ") -> " << cudaGetErrorString(cerr);
+                prefetcher_log(_oss.str());
+                fprintf(stderr, "uvm_prefetcher: cudaMemPrefetchAsync(%p, %zu) -> %s\n", ptr, len, cudaGetErrorString(cerr));
+                // continue trying other chunks
+            } else {
+                std::ostringstream _oss2;
+                _oss2 << "Prefetch chunk " << std::hex << ptr << " - 0x" << (cur + len) << " to device " << device_id;
+                prefetcher_log(_oss2.str());
+                LOGF("uvm_prefetcher: Prefetch chunk %p - %p to device %d\n", ptr, (void*)(uintptr_t)(cur + len), device_id);
             }
             cur += len;
         }
@@ -261,15 +208,6 @@ extern "C" void uvm_prefetcher_prefetch_from_file(const char* filename, int devi
     std::ifstream ifs(filename);
     if (!ifs.is_open()) {
         fprintf(stderr, "uvm_prefetcher: cannot open file %s\n", filename);
-        // also log to file
-        FILE *lf = fopen("/root/AI4Memv2/prefetch_file.log", "a");
-        if (lf) {
-            char tb[64];
-            time_t t = time(NULL);
-            strftime(tb, sizeof(tb), "%F %T", localtime(&t));
-            fprintf(lf, "%s: cannot open predictions file %s\n", tb, filename);
-            fclose(lf);
-        }
         return;
     }
 
@@ -277,73 +215,52 @@ extern "C" void uvm_prefetcher_prefetch_from_file(const char* filename, int devi
     std::string line;
     while (std::getline(ifs, line)) {
         if (line.empty()) continue;
-        // simple CSV split: Category,EventName,Address,... OR model: trigger_time_ns,page_addr,page_idx,score
+        // simple CSV split: Category,EventName,Address,...
         std::istringstream ss(line);
         std::string col;
         // first column
         if (!std::getline(ss, col, ',')) continue;
-        // If the model CSV has header like "trigger_time_ns", skip header
-        if (col.size() > 0 && (col.find("trigger_time") != std::string::npos || col.find("trigger_time_ns") != std::string::npos)) continue;
-        // Determine whether line is UVM trace (starts with UVM) or model output (starts with timestamp)
-        if (col == "UVM") {
-            // UVM trace format: UVM,EventName,Address,...
-            // second column (event name)
-            if (!std::getline(ss, col, ',')) continue;
-            // third column is address
-            std::string addrstr;
-            if (!std::getline(ss, addrstr, ',')) continue;
-            // trim
-            while (!addrstr.empty() && isspace((unsigned char)addrstr.front())) addrstr.erase(addrstr.begin());
-            while (!addrstr.empty() && isspace((unsigned char)addrstr.back())) addrstr.pop_back();
-            if (addrstr.size() == 0) continue;
-            uint64_t addr = 0;
-            try {
-                size_t idx = 0;
-                if (addrstr.find("0x") == 0 || addrstr.find("0X") == 0) {
-                    addr = std::stoull(addrstr, &idx, 16);
-                } else {
-                    addr = std::stoull(addrstr, &idx, 10);
-                }
-            } catch (...) { continue; }
-            size_t page = get_page_size();
-            addr = (addr / page) * page;
-            addrs.push_back(addr);
-        } else {
-            // Model output expected: trigger_time_ns,page_addr,page_idx,score
-            // col is trigger_time_ns
-            std::string addrstr;
-            if (!std::getline(ss, addrstr, ',')) continue;
-            // trim
-            while (!addrstr.empty() && isspace((unsigned char)addrstr.front())) addrstr.erase(addrstr.begin());
-            while (!addrstr.empty() && isspace((unsigned char)addrstr.back())) addrstr.pop_back();
-            if (addrstr.size() == 0) continue;
-            uint64_t addr = 0;
-            try {
-                size_t idx = 0;
-                if (addrstr.find("0x") == 0 || addrstr.find("0X") == 0) {
-                    addr = std::stoull(addrstr, &idx, 16);
-                } else {
-                    addr = std::stoull(addrstr, &idx, 10);
-                }
-            } catch (...) { continue; }
-            size_t page = get_page_size();
-            addr = (addr / page) * page;
-            addrs.push_back(addr);
+        if (col != "UVM") continue; // only UVM lines contain addresses
+        // second column (event name)
+        if (!std::getline(ss, col, ',')) continue;
+        // third column is address
+        std::string addrstr;
+        if (!std::getline(ss, addrstr, ',')) continue;
+        // trim spaces
+        while (!addrstr.empty() && isspace((unsigned char)addrstr.front())) addrstr.erase(addrstr.begin());
+        while (!addrstr.empty() && isspace((unsigned char)addrstr.back())) addrstr.pop_back();
+        if (addrstr.size() == 0) continue;
+        // accept hex like 0x... or decimal
+        uint64_t addr = 0;
+        try {
+            size_t idx = 0;
+            if (addrstr.find("0x") == 0 || addrstr.find("0X") == 0) {
+                addr = std::stoull(addrstr, &idx, 16);
+            } else {
+                addr = std::stoull(addrstr, &idx, 10);
+            }
+        } catch (...) {
+            continue;
         }
+        // page-align
+        size_t page = get_page_size();
+        addr = (addr / page) * page;
+        addrs.push_back(addr);
     }
 
     ifs.close();
-
-    // log how many addresses parsed
-    FILE *lf = fopen("/root/AI4Memv2/prefetch_file.log", "a");
-    if (lf) {
-        char tb[64];
-        time_t t = time(NULL);
-        strftime(tb, sizeof(tb), "%F %T", localtime(&t));
-        fprintf(lf, "%s: parsed %zu addresses from %s\n", tb, addrs.size(), filename);
-        fclose(lf);
-    }
-
     if (addrs.empty()) return;
+
+    // Log the addresses we parsed (count and sample) for debugging
+    {
+        std::ostringstream oss;
+        oss << "uvm_prefetcher_prefetch_from_file: parsed " << addrs.size() << " addresses. sample=";
+        size_t show = std::min<size_t>(20, addrs.size());
+        for (size_t i = 0; i < show; ++i) {
+            oss << std::hex << "0x" << addrs[i];
+            if (i + 1 < show) oss << ",";
+        }
+        prefetcher_log(oss.str());
+    }
     prefetch_addresses(addrs, device_id, sync != 0);
 }

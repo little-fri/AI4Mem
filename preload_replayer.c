@@ -14,7 +14,7 @@ typedef void (*prefetch_file_fn)(const char*, int, int);
 static void call_prefetcher(const char* csv_path, int device, int sync) {
     if (!csv_path) return;
     // Try to load the prefetcher shared lib. Try absolute name first, then generic.
-    const char* libnames[] = { "/root/AI4Memv2/libuvm_prefetcher.so", "libuvm_prefetcher.so", NULL };
+    const char* libnames[] = { "/root/AI4Mem/libuvm_prefetcher.so", "libuvm_prefetcher.so", NULL };
     void* h = NULL;
     for (int i = 0; libnames[i]; ++i) {
         h = dlopen(libnames[i], RTLD_NOW | RTLD_NOLOAD);
@@ -54,7 +54,7 @@ static void* watch_and_prefetch(void* arg) {
                 last_mtime = st.st_mtime;
                 // log detection
                 {
-                    FILE *lf = fopen("/root/AI4Memv2/preload_replayer.log", "a");
+                    FILE *lf = fopen("/root/AI4Mem/preload_replayer.log", "a");
                     if (lf) {
                         char tb[64];
                         time_t t = time(NULL);
@@ -90,7 +90,7 @@ static void preload_replayer_init(void) {
 
     // log constructor start
     {
-        FILE *lf = fopen("/root/AI4Memv2/preload_replayer.log", "a");
+        FILE *lf = fopen("/root/AI4Mem/preload_replayer.log", "a");
         if (lf) {
             char tb[64];
             time_t t = time(NULL);
@@ -102,7 +102,7 @@ static void preload_replayer_init(void) {
 
     // Initial prefetch once (best effort)
     {
-        FILE *lf = fopen("/root/AI4Memv2/preload_replayer.log", "a");
+        FILE *lf = fopen("/root/AI4Mem/preload_replayer.log", "a");
         if (lf) {
             char tb[64];
             time_t t = time(NULL);

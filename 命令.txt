@@ -23,3 +23,6 @@ sudo LD_PRELOAD=./data_collector.so /root/rodinia/cuda/hotspot/hotspot 512 2 100
 /root/rodinia/data/hotspot/temp_512 /root/rodinia/data/hotspot/power_512 output.out
 
 sudo LD_PRELOAD=./data_collector.so ./test
+
+
+cd /root/AI4Mem && nvcc -shared -Xcompiler -fPIC prefetch.cpp -o libuvm_prefetcher.so -lcudart

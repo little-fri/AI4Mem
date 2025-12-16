@@ -1,146 +1,134 @@
-import argparse
-import os
-
-import pandas as pd
-import numpy as np
-import lightgbm as lgb
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import TensorDataset, DataLoader
 import joblib
+import os
+import argparse
 
+CACHE_DIR = 'data_cache'
+DATA_FILE = os.path.join(CACHE_DIR, 'processed_data.pkl')
+MODEL_FILE = os.path.join(CACHE_DIR, 'lstm_model.pth')
 
-def load_uvm_only(path="total_data.csv"):
-    """手动解析，只保留 UVM 行，避免 KERNEL 额外逗号破坏列对齐。"""
-    rows = []
-    with open(path, 'r', errors='ignore') as f:
-        for line in f:
-            if not line.strip():
-                continue
-            if line.lstrip().startswith('#'):
-                continue
-            if not line.startswith('UVM'):
-                # 跳过 KERNEL 等
-                continue
-            parts = line.strip().split(',', 7)
-            # 填充或截断到 8 列
-            parts += [''] * (8 - len(parts))
-            parts = parts[:8]
-            rows.append(parts)
-    if not rows:
-        return pd.DataFrame(columns=['Category','EventName','Address','StartTime_ns','EndTime_ns','Duration_ns','Host_Phys_Info','Mapped_File'])
-    df = pd.DataFrame(rows, columns=['Category','EventName','Address','StartTime_ns','EndTime_ns','Duration_ns','Host_Phys_Info','Mapped_File'])
-    return df
+BATCH_SIZE = 64
+EMBED_DIM = 32
+HIDDEN_DIM = 64
 
+class HotPageLSTM(nn.Module):
+    def __init__(self, num_kernels, num_events, num_pages):
+        super(HotPageLSTM, self).__init__()
+        self.kernel_embed = nn.Embedding(num_kernels, EMBED_DIM)
+        self.event_embed = nn.Embedding(num_events, EMBED_DIM // 2)
+        self.page_embed = nn.Embedding(num_pages, EMBED_DIM)
+        input_dim = EMBED_DIM + (EMBED_DIM // 2) + EMBED_DIM + 1
+        self.lstm = nn.LSTM(input_dim, HIDDEN_DIM, batch_first=True)
+        self.fc = nn.Linear(HIDDEN_DIM, num_pages)
 
-def main():
-    parser = argparse.ArgumentParser(description="Train LightGBM prefetch model (optional继续训练)")
-    parser.add_argument('--total-path', default='total_data.csv', help='总数据 CSV 路径')
-    parser.add_argument('--model-path', default='uvm_prefetch_model.txt', help='模型保存/加载路径')
-    parser.add_argument('--feature-path', default='feature_cols.pkl', help='特征列保存路径')
-    parser.add_argument('--resume', action='store_true', help='若存在旧模型，则在其基础上继续训练')
-    parser.add_argument('--num-boost-round', type=int, default=400, help='最大迭代轮次')
-    parser.add_argument('--early-stop', type=int, default=30, help='提前停止轮次')
-    args = parser.parse_args()
+    def forward(self, x):
+        k_idx = x[:, :, 0].long()
+        e_idx = x[:, :, 1].long()
+        delta = x[:, :, 2].unsqueeze(-1)
+        p_idx = x[:, :, 3].long()
+        lstm_input = torch.cat([
+            self.kernel_embed(k_idx), 
+            self.event_embed(e_idx), 
+            self.page_embed(p_idx), 
+            delta
+        ], dim=2)
+        lstm_out, _ = self.lstm(lstm_input)
+        return self.fc(lstm_out[:, -1, :])
 
-    df = load_uvm_only(args.total_path)
-    if df.empty:
-        print("total_data.csv 为空，无法训练")
-        return
+def smart_load_weights(model, state_dict):
+    """
+    智能权重加载：支持 Embedding 和 Linear 层的自动扩展
+    """
+    model_dict = model.state_dict()
+    
+    for name, param in state_dict.items():
+        if name not in model_dict:
+            continue
+            
+        current_param = model_dict[name]
+        
+        # 1. 如果形状完全一样，直接加载
+        if param.shape == current_param.shape:
+            model_dict[name].copy_(param)
+            
+        # 2. 如果是 Embedding 层且变大了 (行数增加)
+        elif 'embed.weight' in name and param.shape[1] == current_param.shape[1]:
+            old_rows = param.shape[0]
+            new_rows = current_param.shape[0]
+            if new_rows > old_rows:
+                print(f"   Expanding {name}: {old_rows} -> {new_rows}")
+                # 复制旧权重
+                model_dict[name][:old_rows, :].copy_(param)
+                # 新增的权重保持随机初始化
+                
+        # 3. 如果是全连接层且输出变大了 (通常是 fc.weight 和 fc.bias)
+        elif 'fc.' in name:
+            # 检查是否是输出维度变了 (dim 0)
+            if param.shape[0] < current_param.shape[0]:
+                old_out = param.shape[0]
+                print(f"   Expanding {name}: {old_out} -> {current_param.shape[0]}")
+                # fc.weight: [out_features, in_features]
+                if 'weight' in name:
+                    model_dict[name][:old_out, :].copy_(param)
+                # fc.bias: [out_features]
+                else:
+                    model_dict[name][:old_out].copy_(param)
 
-    # 规范时间戳为整数
-    df['StartTime_ns'] = pd.to_numeric(df['StartTime_ns'], errors='coerce').fillna(0).astype(np.int64)
-    df['EndTime_ns'] = pd.to_numeric(df['EndTime_ns'], errors='coerce').fillna(0).astype(np.int64)
+    model.load_state_dict(model_dict)
 
-    uvm_events = df.copy()
-    if uvm_events.empty:
-        print('没有 UVM 事件，无法训练')
-        return
+def train(epochs):
+    if not os.path.exists(DATA_FILE): return
 
-    # 无法可靠匹配 KERNEL（已被跳过），标记为 UNK
-    uvm_events['KernelName'] = 'UNK'
+    print("Loading Data...")
+    data_pkg = joblib.load(DATA_FILE)
+    vocab = data_pkg['vocab_sizes']
+    train_X = data_pkg['train_data']['X']
+    train_Y = data_pkg['train_data']['Y']
 
-    # 标签：GPU_PAGE_FAULT 为 1，其余 0
-    uvm_events['label'] = (uvm_events['EventName'] == 'GPU_PAGE_FAULT').astype(int)
+    if len(train_X) == 0: return
 
-    # 特征工程
-    def addr_to_int(x):
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    
+    # 1. 实例化新维度的模型
+    print(f"Target Vocab: {vocab}")
+    model = HotPageLSTM(vocab['num_kernels'], vocab['num_events'], vocab['num_pages']).to(device)
+    
+    # 2. 加载旧权重并自动扩展
+    if os.path.exists(MODEL_FILE):
+        print("Loading and Expanding old model weights...")
         try:
-            return int(str(x), 16)
-        except Exception:
-            return 0
-
-    uvm_events['PageAddrInt'] = uvm_events['Address'].apply(addr_to_int)
-    uvm_events['KernelID'] = uvm_events['KernelName'].astype('category').cat.codes
-    uvm_events['TimeSincePrevFault'] = uvm_events.groupby('Address')['StartTime_ns'].diff().fillna(0)
-
-    feature_cols = ['PageAddrInt','KernelID','TimeSincePrevFault']
-    X = uvm_events[feature_cols]
-    y = uvm_events['label']
-
-    # 按时间排序并均分 8 份：前 7 份训练，最后 1 份验证
-    X = X.copy()
-    X.loc[:, 'StartTime_ns'] = uvm_events['StartTime_ns'].values
-    X_sorted = X.sort_values('StartTime_ns').reset_index(drop=True)
-    y_sorted = y.loc[X_sorted.index].reset_index(drop=True)
-    n = len(X_sorted)
-    if n < 8:
-        print('数据太少，无法按 8 份切分')
-        return
-    split_idx = n * 7 // 8
-    X_train, X_val = X_sorted.iloc[:split_idx].drop(columns=['StartTime_ns']), X_sorted.iloc[split_idx:].drop(columns=['StartTime_ns'])
-    y_train, y_val = y_sorted.iloc[:split_idx], y_sorted.iloc[split_idx:]
-
-    train_data = lgb.Dataset(X_train, label=y_train)
-    val_data = lgb.Dataset(X_val, label=y_val, reference=train_data)
-
-    params = {
-        'objective': 'binary',
-        'metric': 'binary_logloss',
-        'verbosity': -1,
-        'boosting_type': 'gbdt',
-        'num_leaves': 31,
-        'learning_rate': 0.1,
-        'num_threads': 4
-    }
-
-    init_model = None
-    if args.resume and os.path.exists(args.model_path):
-        try:
-            init_model = lgb.Booster(model_file=args.model_path)
-            print(f"加载已有模型继续训练: {args.model_path}")
+            old_state = torch.load(MODEL_FILE)
+            smart_load_weights(model, old_state['model_state_dict'])
         except Exception as e:
-            print(f"加载旧模型失败，改为重新训练: {e}")
-            init_model = None
+            print(f"Weight loading failed: {e}, starting fresh.")
+    
+    # 3. 训练
+    model.train()
+    optimizer = optim.Adam(model.parameters(), lr=0.005)
+    criterion = nn.CrossEntropyLoss()
+    dataset = TensorDataset(train_X, train_Y)
+    dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+    
+    print(f"Training {epochs} epochs...")
+    for epoch in range(epochs):
+        for bx, by in dataloader:
+            bx, by = bx.to(device), by.to(device)
+            optimizer.zero_grad()
+            loss = criterion(model(bx), by)
+            loss.backward()
+            optimizer.step()
 
-    bst = lgb.train(
-        params,
-        train_data,
-        valid_sets=[val_data],
-        valid_names=['val'],
-        num_boost_round=args.num_boost_round,
-        callbacks=[lgb.early_stopping(args.early_stop)],
-        init_model=init_model
-    )
+    torch.save({
+        'model_state_dict': model.state_dict(),
+        'vocab_sizes': vocab 
+    }, MODEL_FILE)
+    print(f"Model saved.")
 
-    # 验证集简单指标
-    y_val_pred = bst.predict(X_val)
-    from sklearn.metrics import roc_auc_score, average_precision_score, log_loss
-    try:
-        auc = roc_auc_score(y_val, y_val_pred)
-    except Exception:
-        auc = float('nan')
-    try:
-        ap = average_precision_score(y_val, y_val_pred)
-    except Exception:
-        ap = float('nan')
-    try:
-        ll = log_loss(y_val, y_val_pred, eps=1e-7)
-    except Exception:
-        ll = float('nan')
-    print(f"验证集: AUC={auc:.4f} AP={ap:.4f} LogLoss={ll:.4f} (基于最后 1/8 数据)")
-
-    bst.save_model(args.model_path)
-    joblib.dump(feature_cols, args.feature_path)
-    print("训练完成，模型已保存。")
-
-
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--epoch', type=int, default=5)
+    args = parser.parse_args()
+    train(args.epoch)
