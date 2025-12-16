@@ -15,6 +15,7 @@
 #include <cuda_runtime.h>
 #include <ctime>
 #include <iomanip>
+#include <unordered_map>
 // Debug logging control: set PREFETCH_VERBOSE to 1 to enable verbose stderr logs
 #ifndef PREFETCH_VERBOSE
 #define PREFETCH_VERBOSE 0
@@ -71,7 +72,8 @@ __attribute__((constructor)) static void prefetcher_on_load() {
 }
 
 // forward declaration for chunked prefetcher helper
-static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id, bool sync);
+struct AddrMeta;
+static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id, bool sync, const std::vector<AddrMeta> *metas = nullptr);
 static void do_prefetch_once_internal() {
     std::vector<uint64_t> copy;
     {
@@ -136,7 +138,14 @@ extern "C" void uvm_prefetcher_record_page(uint64_t addr) {
 }
 
 // Helper: perform prefetch for a vector of page-aligned addresses
-static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id, bool sync) {
+struct AddrMeta {
+    uint64_t page_addr;
+    uint64_t orig_addr;
+    std::string timestamp_ns;
+    std::string confidence;
+};
+
+static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id, bool sync, const std::vector<AddrMeta> *metas) {
     if (addrs.empty()) return;
 
     // merge into ranges (input assumed page-aligned)
@@ -147,6 +156,14 @@ static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id
     std::vector<uint64_t> tmp = addrs;
     std::sort(tmp.begin(), tmp.end());
     tmp.erase(std::unique(tmp.begin(), tmp.end()), tmp.end());
+
+    // Build a lookup from page -> list of metadata entries (if provided)
+    std::unordered_map<uint64_t, std::vector<AddrMeta>> meta_map;
+    if (metas) {
+        for (const auto &m : *metas) {
+            meta_map[m.page_addr].push_back(m);
+        }
+    }
 
     for (uint64_t a : tmp) {
         if (ranges.empty()) ranges.push_back({a, a + page});
@@ -206,12 +223,40 @@ static void prefetch_addresses(const std::vector<uint64_t> &addrs, int device_id
                 _oss << "cudaMemPrefetchAsync(" << std::hex << ptr << "," << std::dec << len << ") -> " << cudaGetErrorString(cerr);
                 prefetcher_log(_oss.str());
                 fprintf(stderr, "uvm_prefetcher: cudaMemPrefetchAsync(%p, %zu) -> %s\n", ptr, len, cudaGetErrorString(cerr));
+                // Log per-page failure if we have metadata
+                if (!meta_map.empty()) {
+                    uint64_t p = cur;
+                    for (; p < cur + len; p += page) {
+                        auto it = meta_map.find(p);
+                        if (it != meta_map.end()) {
+                            for (const auto &mm : it->second) {
+                                std::ostringstream eoss;
+                                eoss << "Prefetch FAILED page 0x" << std::hex << p << " (orig=0x" << mm.orig_addr << ") device=" << device_id << " err=" << cudaGetErrorString(cerr) << " ts=" << mm.timestamp_ns << " conf=" << mm.confidence;
+                                prefetcher_log(eoss.str());
+                            }
+                        }
+                    }
+                }
                 // continue trying other chunks
             } else {
                 std::ostringstream _oss2;
                 _oss2 << "Prefetch chunk " << std::hex << ptr << " - 0x" << (cur + len) << " to device " << device_id;
                 prefetcher_log(_oss2.str());
                 LOGF("uvm_prefetcher: Prefetch chunk %p - %p to device %d\n", ptr, (void*)(uintptr_t)(cur + len), device_id);
+                // Log per-page successes if we have metadata
+                if (!meta_map.empty()) {
+                    uint64_t p = cur;
+                    for (; p < cur + len; p += page) {
+                        auto it = meta_map.find(p);
+                        if (it != meta_map.end()) {
+                            for (const auto &mm : it->second) {
+                                std::ostringstream soss;
+                                soss << "Prefetch SUCCESS page 0x" << std::hex << p << " (orig=0x" << mm.orig_addr << ") device=" << device_id << " ts=" << mm.timestamp_ns << " conf=" << mm.confidence;
+                                prefetcher_log(soss.str());
+                            }
+                        }
+                    }
+                }
             }
             cur += len;
         }
@@ -233,42 +278,45 @@ extern "C" void uvm_prefetcher_prefetch_from_file(const char* filename, int devi
         fprintf(stderr, "uvm_prefetcher: cannot open file %s\n", filename);
         return;
     }
-
     std::vector<uint64_t> addrs;
+    std::vector<AddrMeta> metas;
     std::string line;
     while (std::getline(ifs, line)) {
         if (line.empty()) continue;
-        // simple CSV split: Category,EventName,Address,...
+        // Try expected predictions.csv format: Timestamp_ns,Prefetch_Address,Confidence
         std::istringstream ss(line);
-        std::string col;
-        // first column
-        if (!std::getline(ss, col, ',')) continue;
-        if (col != "UVM") continue; // only UVM lines contain addresses
-        // second column (event name)
-        if (!std::getline(ss, col, ',')) continue;
-        // third column is address
-        std::string addrstr;
-        if (!std::getline(ss, addrstr, ',')) continue;
-        // trim spaces
-        while (!addrstr.empty() && isspace((unsigned char)addrstr.front())) addrstr.erase(addrstr.begin());
-        while (!addrstr.empty() && isspace((unsigned char)addrstr.back())) addrstr.pop_back();
-        if (addrstr.size() == 0) continue;
-        // accept hex like 0x... or decimal
-        uint64_t addr = 0;
+        std::string ts_col, addr_col, conf_col;
+        if (!std::getline(ss, ts_col, ',')) continue;
+        if (!std::getline(ss, addr_col, ',')) continue;
+        if (!std::getline(ss, conf_col, ',')) {
+            // fallback: older UVM format: Category,EventName,Address,...
+            ss.clear(); ss.str(line);
+            std::string col0, col1, col2;
+            if (!std::getline(ss, col0, ',')) continue;
+            if (col0 != "UVM") continue;
+            if (!std::getline(ss, col1, ',')) continue;
+            if (!std::getline(ss, col2, ',')) continue;
+            ts_col = "";
+            addr_col = col2;
+            conf_col = "";
+        }
+        auto trim = [](std::string &s) {
+            while (!s.empty() && isspace((unsigned char)s.front())) s.erase(s.begin());
+            while (!s.empty() && isspace((unsigned char)s.back())) s.pop_back();
+        };
+        trim(ts_col); trim(addr_col); trim(conf_col);
+        if (addr_col.empty()) continue;
+        uint64_t orig_addr = 0;
         try {
             size_t idx = 0;
-            if (addrstr.find("0x") == 0 || addrstr.find("0X") == 0) {
-                addr = std::stoull(addrstr, &idx, 16);
-            } else {
-                addr = std::stoull(addrstr, &idx, 10);
-            }
-        } catch (...) {
-            continue;
-        }
-        // page-align
+            if (addr_col.find("0x") == 0 || addr_col.find("0X") == 0) orig_addr = std::stoull(addr_col, &idx, 16);
+            else orig_addr = std::stoull(addr_col, &idx, 10);
+        } catch (...) { continue; }
         size_t page = get_page_size();
-        addr = (addr / page) * page;
-        addrs.push_back(addr);
+        uint64_t page_addr = (orig_addr / page) * page;
+        addrs.push_back(page_addr);
+        AddrMeta m; m.page_addr = page_addr; m.orig_addr = orig_addr; m.timestamp_ns = ts_col; m.confidence = conf_col;
+        metas.push_back(m);
     }
 
     ifs.close();
@@ -285,5 +333,5 @@ extern "C" void uvm_prefetcher_prefetch_from_file(const char* filename, int devi
         }
         prefetcher_log(oss.str());
     }
-    prefetch_addresses(addrs, device_id, sync != 0);
+    prefetch_addresses(addrs, device_id, sync != 0, &metas);
 }

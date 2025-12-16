@@ -879,3 +879,253 @@
 2025-12-16 15:16:46: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
 2025-12-16 15:16:46: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
 2025-12-16 15:16:46: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:53: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:24:53: calling initial prefetch for ./predictions.csv
+2025-12-16 15:24:53: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:53: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:54: started watcher thread (poll_ms=1000)
+2025-12-16 15:24:54: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:54: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:24:54: calling initial prefetch for ./predictions.csv
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:24:54: calling initial prefetch for ./predictions.csv
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:54: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:54: started watcher thread (poll_ms=1000)
+2025-12-16 15:24:54: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:24:54: calling initial prefetch for ./predictions.csv
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:54: started watcher thread (poll_ms=1000)
+2025-12-16 15:24:54: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:24:54: started watcher thread (poll_ms=1000)
+2025-12-16 15:24:54: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:24:54: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:24:54: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:04: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:04: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:04: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:04: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:04: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:04: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:25:04: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:04: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:05: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:05: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:05: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:05: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:05: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:05: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:25:05: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:05: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:06: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:06: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:06: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:06: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:06: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:06: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:25:06: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:06: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:06: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:06: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:06: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:06: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:06: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:06: watcher detected mtime change for ./predictions.csv (mtime=1765869189), calling prefetcher
+2025-12-16 15:25:06: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:06: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:08: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:08: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:08: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:08: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:08: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:08: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:08: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:13: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:13: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:13: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:13: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:13: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:13: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:13: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:13: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:13: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:13: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:13: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:13: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:14: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:14: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:14: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:14: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:15: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:15: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:15: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:15: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:15: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:15: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:15: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:15: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:15: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:15: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:15: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:15: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:15: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:15: watcher detected mtime change for ./predictions.csv (mtime=1765869908), calling prefetcher
+2025-12-16 15:25:15: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:15: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:17: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:17: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:17: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:17: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:17: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:17: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:17: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:22: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:22: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:22: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:22: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:22: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:22: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:22: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:22: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:22: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:22: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:22: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:22: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:22: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:22: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:22: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:22: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:24: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:24: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:24: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:24: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:24: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:24: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:24: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:24: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:24: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:24: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:24: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:24: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:24: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:24: watcher detected mtime change for ./predictions.csv (mtime=1765869917), calling prefetcher
+2025-12-16 15:25:24: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:24: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:26: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:26: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:26: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:26: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:26: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:26: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:26: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:26: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:26: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:26: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:27: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:27: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:27: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:27: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:28: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:28: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:28: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:28: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:28: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:28: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:28: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:28: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:28: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:28: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:29: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:29: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:29: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:29: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:31: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:31: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:31: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:31: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:31: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:31: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:31: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:31: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:31: preload_replayer init: csv=./predictions.csv device=0 sync=0 delay=0
+2025-12-16 15:25:31: calling initial prefetch for ./predictions.csv
+2025-12-16 15:25:31: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:31: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded
+2025-12-16 15:25:31: started watcher thread (poll_ms=1000)
+2025-12-16 15:25:31: watcher detected mtime change for ./predictions.csv (mtime=1765869926), calling prefetcher
+2025-12-16 15:25:31: preload_replayer trying dlopen('/root/AI4Memv3/libuvm_prefetcher.so')
+2025-12-16 15:25:31: preload_replayer dlopen('/root/AI4Memv3/libuvm_prefetcher.so') succeeded

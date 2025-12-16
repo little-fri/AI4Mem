@@ -9,3 +9,1335 @@
 2025-12-16 15:16:46: lib loaded constructor write (pid=46189)
 2025-12-16 15:16:46: lib loaded constructor write (pid=46198)
 2025-12-16 15:16:46: lib loaded constructor write (pid=46198)
+2025-12-16 15:24:53: lib loaded constructor write (pid=46730)
+2025-12-16 15:24:53: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:53: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:24:54: lib loaded constructor write (pid=46730)
+2025-12-16 15:24:54: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:54: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: lib loaded constructor write (pid=46745)
+2025-12-16 15:24:54: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:54: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: lib loaded constructor write (pid=46746)
+2025-12-16 15:24:54: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:54: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:24:54: lib loaded constructor write (pid=46745)
+2025-12-16 15:24:54: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:54: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: lib loaded constructor write (pid=46746)
+2025-12-16 15:24:54: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:54: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:24:54: lib loaded constructor write (pid=46745)
+2025-12-16 15:24:54: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:24:54: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:24:54: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:24:54: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:04: lib loaded constructor write (pid=46836)
+2025-12-16 15:25:04: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:04: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:25:04: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:04: lib loaded constructor write (pid=46836)
+2025-12-16 15:25:04: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:04: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:25:04: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:25:04: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:05: lib loaded constructor write (pid=46848)
+2025-12-16 15:25:05: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:05: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:25:05: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:25:05: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:05: lib loaded constructor write (pid=46848)
+2025-12-16 15:25:06: lib loaded constructor write (pid=46881)
+2025-12-16 15:25:06: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:06: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:25:06: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:06: lib loaded constructor write (pid=46881)
+2025-12-16 15:25:06: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:06: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:25:06: lib loaded constructor write (pid=46899)
+2025-12-16 15:25:06: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:06: prefetch_addresses: computed 1 ranges. [0x7fe2ae000000-0x7fe2ae001000]
+2025-12-16 15:25:06: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:06: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045707520 conf=0.75
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045717504 conf=0.69
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045727488 conf=0.68
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045737472 conf=0.68
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045747456 conf=0.66
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045757440 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045767424 conf=0.65
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045777408 conf=0.64
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045787392 conf=0.60
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045797376 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045807360 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045817344 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045827328 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045837312 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045847296 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045857280 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045867264 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045877248 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045887232 conf=0.61
+2025-12-16 15:25:06: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869156045897216 conf=0.61
+2025-12-16 15:25:06: lib loaded constructor write (pid=46899)
+2025-12-16 15:25:08: lib loaded constructor write (pid=46730)
+2025-12-16 15:25:08: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:08: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:08: lib loaded constructor write (pid=46921)
+2025-12-16 15:25:08: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:08: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:08: lib loaded constructor write (pid=46746)
+2025-12-16 15:25:08: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:08: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:08: lib loaded constructor write (pid=46921)
+2025-12-16 15:25:08: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:08: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:08: lib loaded constructor write (pid=46745)
+2025-12-16 15:25:08: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:08: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:08: lib loaded constructor write (pid=46928)
+2025-12-16 15:25:08: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:08: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:08: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:08: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:08: lib loaded constructor write (pid=46928)
+2025-12-16 15:25:13: lib loaded constructor write (pid=46987)
+2025-12-16 15:25:13: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:13: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:13: lib loaded constructor write (pid=46987)
+2025-12-16 15:25:13: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:13: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:13: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:13: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:13: lib loaded constructor write (pid=47003)
+2025-12-16 15:25:13: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:13: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:14: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:14: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:14: lib loaded constructor write (pid=47003)
+2025-12-16 15:25:15: lib loaded constructor write (pid=47007)
+2025-12-16 15:25:15: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:15: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:15: lib loaded constructor write (pid=47007)
+2025-12-16 15:25:15: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:15: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:15: lib loaded constructor write (pid=47028)
+2025-12-16 15:25:15: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7f22ee900000,0x7efcb6f2d000,0x7efcb7116000,0x7fe2aee00000,0x7fe2aee00000,0x7fe2aee15000,0x7fe2aee16000,0x7f22ef0af000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000,0x7fe2ae000000
+2025-12-16 15:25:15: prefetch_addresses: computed 7 ranges. [0x7efcb6f2d000-0x7efcb6f2e000],[0x7efcb7116000-0x7efcb7117000],[0x7f22ee900000-0x7f22ee901000],[0x7f22ef0af000-0x7f22ef0b0000],[0x7fe2ae000000-0x7fe2ae001000],[0x7fe2aee00000-0x7fe2aee01000],[0x7fe2aee15000-0x7fe2aee17000]
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7efcb6f2d000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7efcb6f2d000 (orig=0x7efcb6f2d000) device=0 err=invalid argument ts=1765869899760188416 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7efcb7116000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7efcb7116000 (orig=0x7efcb7116000) device=0 err=invalid argument ts=1765869899760198400 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7f22ee900000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7f22ee900000 (orig=0x7f22ee900000) device=0 err=invalid argument ts=1765869899760178432 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7f22ef0af000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7f22ef0af000 (orig=0x7f22ef0af000) device=0 err=invalid argument ts=1765869899760248320 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2ae000000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760258304 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760268288 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760278272 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760288256 conf=0.01
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760298240 conf=0.02
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760308224 conf=0.06
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760318208 conf=0.08
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760328192 conf=0.08
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760338176 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760348160 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760358144 conf=0.07
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2ae000000 (orig=0x7fe2ae000000) device=0 err=invalid argument ts=1765869899760368128 conf=0.07
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2aee00000,4096) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760208384 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee00000 (orig=0x7fe2aee00000) device=0 err=invalid argument ts=1765869899760218368 conf=0.00
+2025-12-16 15:25:15: cudaMemPrefetchAsync(0x7fe2aee15000,8192) -> invalid argument
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee15000 (orig=0x7fe2aee15000) device=0 err=invalid argument ts=1765869899760228352 conf=0.00
+2025-12-16 15:25:15: Prefetch FAILED page 0x7fe2aee16000 (orig=0x7fe2aee16000) device=0 err=invalid argument ts=1765869899760238336 conf=0.00
+2025-12-16 15:25:15: lib loaded constructor write (pid=47028)
+2025-12-16 15:25:17: lib loaded constructor write (pid=46730)
+2025-12-16 15:25:17: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:17: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:17: lib loaded constructor write (pid=47072)
+2025-12-16 15:25:17: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:17: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:17: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:17: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:17: lib loaded constructor write (pid=47072)
+2025-12-16 15:25:17: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:17: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:17: lib loaded constructor write (pid=47078)
+2025-12-16 15:25:17: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:17: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:17: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:17: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:17: lib loaded constructor write (pid=47078)
+2025-12-16 15:25:17: lib loaded constructor write (pid=46746)
+2025-12-16 15:25:17: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:17: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:17: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:17: lib loaded constructor write (pid=46745)
+2025-12-16 15:25:17: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:17: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:17: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:17: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:22: lib loaded constructor write (pid=47128)
+2025-12-16 15:25:22: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:22: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:22: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:22: lib loaded constructor write (pid=47128)
+2025-12-16 15:25:22: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:22: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:22: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:22: lib loaded constructor write (pid=47140)
+2025-12-16 15:25:22: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:22: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:22: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:22: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:22: lib loaded constructor write (pid=47140)
+2025-12-16 15:25:24: lib loaded constructor write (pid=47144)
+2025-12-16 15:25:24: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:24: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:24: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:24: lib loaded constructor write (pid=47144)
+2025-12-16 15:25:24: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:24: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:24: lib loaded constructor write (pid=47149)
+2025-12-16 15:25:24: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:24: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:24: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:24: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746173184 conf=0.32
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746183168 conf=0.32
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746193152 conf=0.26
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746203136 conf=0.21
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746213120 conf=0.19
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746223104 conf=0.16
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746233088 conf=0.17
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746243072 conf=0.14
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746253056 conf=0.09
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746263040 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746273024 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746283008 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746292992 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746302976 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746312960 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746322944 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746332928 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746342912 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746352896 conf=0.11
+2025-12-16 15:25:24: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869909746362880 conf=0.11
+2025-12-16 15:25:24: lib loaded constructor write (pid=47149)
+2025-12-16 15:25:26: lib loaded constructor write (pid=47188)
+2025-12-16 15:25:26: lib loaded constructor write (pid=47187)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: lib loaded constructor write (pid=47187)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: lib loaded constructor write (pid=47188)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: lib loaded constructor write (pid=46730)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: lib loaded constructor write (pid=47205)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: lib loaded constructor write (pid=47205)
+2025-12-16 15:25:26: lib loaded constructor write (pid=46746)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: lib loaded constructor write (pid=47223)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:26: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:26: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:26: lib loaded constructor write (pid=46745)
+2025-12-16 15:25:26: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:26: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:27: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:27: lib loaded constructor write (pid=47223)
+2025-12-16 15:25:27: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:27: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:28: lib loaded constructor write (pid=47247)
+2025-12-16 15:25:28: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:28: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:28: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:28: lib loaded constructor write (pid=47247)
+2025-12-16 15:25:28: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:28: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:28: lib loaded constructor write (pid=47253)
+2025-12-16 15:25:28: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:28: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:28: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:28: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:29: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:29: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:29: lib loaded constructor write (pid=47253)
+2025-12-16 15:25:31: lib loaded constructor write (pid=47281)
+2025-12-16 15:25:31: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:31: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:31: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:31: lib loaded constructor write (pid=47281)
+2025-12-16 15:25:31: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:31: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:31: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:31: lib loaded constructor write (pid=47289)
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:31: uvm_prefetcher_prefetch_from_file: parsed 20 addresses. sample=0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000,0x7efcb6000000
+2025-12-16 15:25:31: prefetch_addresses: computed 1 ranges. [0x7efcb6000000-0x7efcb6001000]
+2025-12-16 15:25:31: cudaMemPrefetchAsync(0x7efcb6000000,4096) -> invalid argument
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717197312 conf=0.92
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717207296 conf=0.92
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717217280 conf=0.90
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717227264 conf=0.91
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717237248 conf=0.89
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717247232 conf=0.81
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717257216 conf=0.84
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717267200 conf=0.77
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717277184 conf=0.70
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717287168 conf=0.65
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717297152 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717307136 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717317120 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717327104 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717337088 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717347072 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717357056 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717367040 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717377024 conf=0.64
+2025-12-16 15:25:31: Prefetch FAILED page 0x7efcb6000000 (orig=0x7efcb6000000) device=0 err=invalid argument ts=1765869918717387008 conf=0.64
+2025-12-16 15:25:31: lib loaded constructor write (pid=47289)
