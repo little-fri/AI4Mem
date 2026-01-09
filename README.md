@@ -1,3 +1,137 @@
+# AI4Memv3 — UVM/Prefetch research toolkit
+
+这是为调试与研究基于 UVM 的内存迁移与预取(prefetch)策略而搭建的实验性工具链（收集器、预处理、模型训练、实时推理 + 注入式回放）。
+
+该仓库聚焦于：
+- 稳健采集 CUDA/UVM 事件（CUPTI/LD_PRELOAD 采集器）
+- 将采集的事件解析为页级序列数据（preprocess）
+- 使用时序模型（LSTM）训练一个预取/故障预测模型
+- 在运行时将模型输出写为 CSV，并通过 LD_PRELOAD 注入器（preload_replayer.so）在目标进程启动/运行时触发预取
+
+下面把主要组件、快速使用步骤、常见问题与进阶建议都整理在一起，便于复现和二次开发。
+
+## 目录结构（高层）
+- `data_collector.*` — CUPTI / 注入式运行时采集器（C/C++），会输出旋转文件和 `data.csv` / `total_data.csv`。
+- `preload_replayer.c` — 一个小型 LD_PRELOAD watcher，当 `PREDICTIONS_FILE`（默认为 `./predictions.csv`）被修改时调用用户的 prefetcher 接口。
+- `preprocess.py` — 将原始 UVM CSV 解析为时序样本（序列 -> 标签）供模型训练。
+- `train_model.py` — LSTM 训练脚本（现在采用 PyTorch 实现，训练数据来源 `total_data.csv`）。
+- `infer.py` / `run_prefetch_loop.py` — 推理与实时循环 supervisor，负责周期性调用预处理 -> 推理 -> 写出 `predictions.csv`。
+- `uvm_* .csv` — collector 输出的 CSV（旋转副本 + `data.csv` + `total_data.csv` 累积）。
+
+## 快速开始（最小复现流程）
+
+1) 编译 `preload_replayer.so`
+
+```bash
+gcc -shared -fPIC -O2 -Wall -Wextra -o ./preload_replayer.so ./preload_replayer.c -ldl -lpthread
+```
+
+编译成功后会生成 `preload_replayer.so`，可由 `LD_PRELOAD` 加载。示例：
+
+```bash
+export PREDICTIONS_FILE=./predictions.csv
+export PREFETCH_DEVICE=0
+export PREFETCH_SYNC=0
+export PREFETCH_POLL_MS=1000
+export LD_PRELOAD="$(pwd)/preload_replayer.so${LD_PRELOAD:+:}$LD_PRELOAD"
+# 启动目标程序（被注入）
+./your_target_program
+```
+
+> 注意：`preload_replayer.so` 在进程构造函数中会立即进行一次预取（若 `PREDICTIONS_FILE` 存在），并启动一个检查线程以便在文件修改时再次触发预取。
+
+2) 编译/安装采集器（可选）
+
+如果你要在目标进程收集 UVM 事件，需要编译 `data_collector`：
+
+- 如果使用 nvcc (CUDA)：
+
+```bash
+# 这是示例，具体命令取决于仓库中的 Makefile / CMakeLists
+nvcc -shared -Xcompiler -fPIC -o data_collector.so data_collector.cpp -lcudart
+```
+
+- 或用 g++ 编译一个基于 LD_PRELOAD 的采集器（无 CUDA CUPTI 支持）：
+
+```bash
+g++ -shared -fPIC -O2 -o data_collector.so data_collector.cpp -ldl -pthread
+```
+
+采集器编译后放到 LD_PRELOAD（确保 `preload_replayer.so` 在前面），例如：
+
+```bash
+export LD_PRELOAD="$(pwd)/preload_replayer.so:$(pwd)/data_collector.so${LD_PRELOAD:+:}$LD_PRELOAD"
+./test  # 运行目标 workload
+```
+
+3) 训练模型（离线）
+
+处理好 `total_data.csv`（由 collector 累积生成）后：
+
+```bash
+# 小规模测试训练
+python3 train_model.py --total-path total_data.csv --model-path model_lstm.pth --epochs 5
+
+# 生成的文件： model_lstm.pth, model_lstm.pth.page2idx.pkl, model_lstm.pth.meta.json
+```
+
+4) 推理与实时循环（supervisor）
+
+仓库里已有 `launch_with_replay.sh`，它通过环境变量设置 `PREDICTIONS_FILE` 并运行 `auto_collect_loop.py`（或 `run_prefetch_loop.py`）。简化使用：
+
+```bash
+./launch_with_replay.sh
+```
+
+或者手动启动 supervisor：
+
+```bash
+python3 run_prefetch_loop.py --interval 5 --model model_lstm.pth --out_dir run_out
+```
+
+该 supervisor 周期性（默认 5s）复制/读取 collector 输出，运行 `preprocess.py` -> `infer.py`，然后写出 `predictions.csv`（也会写 timestamp 备份）。`preload_replayer.so` 会监听该文件并触发预取。
+
+## 重要环境变量
+- `PREDICTIONS_FILE` 或 `PREFETCH_CSV`：预取器监听的 CSV 路径（preload_replayer 使用）。
+- `PREFETCH_DEVICE`：目标 GPU 设备 id。
+- `PREFETCH_SYNC`：是否同步等待预取完成（0=异步 默认，1=同步）。
+- `PREFETCH_DELAY_SEC`：注入器启动后等待的秒数（可选）。
+- `PREFETCH_POLL_MS`：watcher 轮询文件修改的毫秒间隔。
+
+## 文件格式与约定
+- Collector 输出 CSV 每行包含 (Category,EventName,Address,StartTime_ns,EndTime_ns,Duration_ns,Host_Phys_Info,Mapped_File)；脚本以 `UVM` 开头的行为目标事件。
+- 地址应为 0x... 十六进制或能解析为整数；脚本按 PAGE_SIZE=4096 做页化映射。
+- `data.csv`：每次 collector 旋转后会把最新旋转内容写为 `data.csv` 供实时消费者使用。
+- `total_data.csv`：累积的历史事件，用于离线训练。
+
+## 调试 & 常见问题
+- 如果 `preload_replayer.so` 无法加载：检查 `LD_PRELOAD` 路径是否是绝对路径、库文件权限是否可读。
+- 查看注入器日志：`/root/AI4Mem/preload_replayer.log`（如果脚本使用绝对路径写入），或者仓库下的 `preload_replayer.log`。
+- 如果 watcher 没有响应文件改写：确认 `PREDICTIONS_FILE` 指向你要写入的文件，且写入操作是原子替换（推荐先写到临时文件然后 rename），这样 mtime 会变化。
+- 如果模型预测效果不好：
+	- 检查 `preprocess.py` 的序列构造（seq_len、horizon）是否与你期待的任务一致；
+	- 增加样本数、使用更长的序列或加入时间差特征；
+	- 使用多标签（predict future-k pages）而非当前二分类任务。
+
+## 评估
+仓库内有评估脚本（`eval.py`），可以计算 recall@K、precision@K、mAP 和 micro-F1。训练完成后运行评估：
+
+```bash
+python3 eval.py --data train_data_big.pth --model model_lstm.pth --out eval_report.json
+```
+
+## 开发建议 / 下一步
+- 若目标是“预测未来 2s 内将被访问的页集合”，建议将训练标签改为 multi-hot 的 horizon 标签，模型输出扩展到 vocab_size（多标签 BCEWithLogits）。
+- 考虑把推理过程放到一个小型守护进程并用轻量模型以减少在线延迟。
+
+如果你需要，我可以：
+- 帮你把 `infer.py` 和 `preload_replayer` 的接口对接（确保 CSV 格式兼容）；
+- 把 `train_model.py` 改为 multi-label / horizon 预测并连同 infer/eval 一并调整；
+- 或者演示一次从采集 -> 训练 -> 推理 -> 注入的端到端运行（并把我在终端运行的命令和输出贴出来）。
+
+---
+
+README 更新时间：2025-12-16
 ## AI4Mem4：基于 UVM 的页面访问采集、训练与预取一体化框架
 
 AI4Mem4 目录集成了你们团队当前所有的核心功能：
